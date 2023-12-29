@@ -1,0 +1,15 @@
+<view class="container">
+  <view>
+    <image></image>
+  </view>
+  <view class="ai-segment">
+    <l-segment l-class="ai-segment-selector" active-key="one" bind:linchange="changeTabs" animated-for-line="true" >
+      <l-segment-item tab="热门" key="one" />
+      <l-segment-item tab="上新" key="two" />
+      <l-segment-item tab="学习" key="three" />
+      <l-segment-item tab="工作" key="four" />
+      <l-segment-item tab="社交" key="five" />
+      <l-segment-item tab="运营" key="six" />
+    </l-segment>
+  </view>
+</view>

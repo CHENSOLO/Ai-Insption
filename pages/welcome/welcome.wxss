@@ -1,0 +1,42 @@
+/* pages/welcome/welcome.wxss */
+/**css样式建议使用连字符-**/
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.avatar-wrapper {
+  padding: 0;
+  width: 56px !important;
+  border-radius: 8px;
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.avatar {
+  display: block;
+  width: 56px;
+  height: 56px;
+}
+.weui-input{
+  font-size: 27rpx;
+  margin-left: 150rpx;
+}
+
+.journey-container {
+  border: 1px solid #405f80;
+  width: 250rpx;
+  height: 80rpx;
+  border-radius: 10rpx;
+  text-align: center;
+  margin-top: 100rpx;
+}
+
+.journey {
+  font-size: 22rpx;
+  color: #405f80;
+  line-height: 80rpx;
+  font-weight: bold;
+}

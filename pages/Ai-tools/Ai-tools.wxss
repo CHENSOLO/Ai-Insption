@@ -1,0 +1,6 @@
+/* .ai-segment-selector{
+  width: 100% !important;
+} */
+.l-segment-item{
+  width: 300rpx !important;
+}

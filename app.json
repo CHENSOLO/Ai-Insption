@@ -1,0 +1,15 @@
+{
+  "pages": [
+    "pages/welcome/welcome",
+    "pages/index/index",
+    "pages/Ai-tools/Ai-tools"
+  ],
+  "window": {
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "AI Insption",
+    "backgroundColor": "#99cccc",
+    "backgroundTextStyle": "light",
+    "enablePullDownRefresh": true
+  }
+}
