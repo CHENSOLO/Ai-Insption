@@ -2,8 +2,9 @@
   <view>
     <image></image>
   </view>
+  <!-- 标签栏 -->
   <view class="ai-segment">
-    <l-segment l-class="ai-segment-selector" active-key="one" bind:linchange="changeTabs" animated-for-line="true" >
+    <l-segment l-class="ai-segment-selector" active-key="one" bind:linchange="changeTabs" animated-for-line="true">
       <l-segment-item tab="热门" key="one" />
       <l-segment-item tab="上新" key="two" />
       <l-segment-item tab="学习" key="three" />
@@ -12,4 +13,70 @@
       <l-segment-item tab="运营" key="six" />
     </l-segment>
   </view>
+  <!-- 工具栏 -->
+  <view class="ai-container-all">
+    <view class="ai-container-tools">
+      <view class="ai-container-hot">
+        <image class="ai-image-hot" src="../../images/icon/hotbooks.jpg"></image>
+        <view class="ai-text-hot">
+          <text class="title">小红书笔记</text>
+          <text class="content">写笔记从未如此轻松</text>
+        </view>
+      </view>
+      <view class="ai-container-hot">
+        <image class="ai-image-hot" src="../../images/icon/hotbooks.jpg"></image>
+        <view class="ai-text-hot">
+          <text class="title">小红书笔记</text>
+          <text class="content">写笔记从未如此轻松</text>
+        </view>
+      </view>
+    </view>
+    <view class="ai-container-tools">
+      <view class="ai-container-hot">
+        <image class="ai-image-hot" src="../../images/icon/hotbooks.jpg"></image>
+        <view class="ai-text-hot">
+          <text class="title">小红书笔记</text>
+          <text class="content">写笔记从未如此轻松</text>
+        </view>
+      </view>
+      <view class="ai-container-hot">
+        <image class="ai-image-hot" src="../../images/icon/hotbooks.jpg"></image>
+        <view class="ai-text-hot">
+          <text class="title">小红书笔记</text>
+          <text class="content">写笔记从未如此轻松</text>
+        </view>
+      </view>
+    </view>
+    <view class="ai-container-tools">
+      <view class="ai-container-hot">
+        <image class="ai-image-hot" src="../../images/icon/hotbooks.jpg"></image>
+        <view class="ai-text-hot">
+          <text class="title">小红书笔记</text>
+          <text class="content">写笔记从未如此轻松</text>
+        </view>
+      </view>
+      <view class="ai-container-hot">
+        <image class="ai-image-hot" src="../../images/icon/hotbooks.jpg"></image>
+        <view class="ai-text-hot">
+          <text class="title">小红书笔记</text>
+          <text class="content">写笔记从未如此轻松</text>
+        </view>
+      </view>
+    </view>
+  </view>
+<!-- 
+  <l-tabs bind:linchange="changeTabs">
+        <l-tabpanel tab="京东物流" key="one" slot="one">
+          <view class="tab-content">京东物流</view>
+        </l-tabpanel>
+        <l-tabpanel tab="品牌" key="two" slot="two">
+          <view class="tab-content">品牌</view>
+        </l-tabpanel>
+        <l-tabpanel tab="接口" key="three" slot="three">
+          <view class="tab-content">接口</view>
+        </l-tabpanel>
+        <l-tabpanel tab="面板" key="four" slot="four">
+          <view class="tab-content">面板</view>
+        </l-tabpanel>
+      </l-tabs> -->
 </view>
