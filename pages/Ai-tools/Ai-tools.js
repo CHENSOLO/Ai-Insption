@@ -5,24 +5,31 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    segmentData:0
+    // segmentData: null
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
   },
-  
+
+  onLoad: function () {
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady() {
 
   },
-  changeTabs(event){
-    console.log(event)
+
+  GetTabinfo(event) {
+    const key = event.detail.activeKey
+    this.setData({
+      segmentData: key
+    })
   },
   /**
    * 生命周期函数--监听页面显示
