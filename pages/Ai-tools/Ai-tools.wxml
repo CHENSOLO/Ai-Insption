@@ -1,6 +1,5 @@
 <view class="container">
-  <view>
-    <image></image>
+  <view class="ai-top">
   </view>
   <!-- 标签栏 -->
   <view class="ai-segment">

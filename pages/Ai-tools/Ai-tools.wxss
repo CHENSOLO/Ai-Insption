@@ -1,6 +1,10 @@
 /* .ai-segment-selector{
   width: 100% !important;
 } */
+.ai-top{
+  height: 300rpx;
+  width: 100%;
+}
 .l-segment-item{
   width: 300rpx !important;
 }
