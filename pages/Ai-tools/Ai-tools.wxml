@@ -16,7 +16,7 @@
   <view class="ai-container-all">
     <!-- 默认为0 -->
     <view wx:if="{{segmentData==0}}" class="ai-container-tools">
-      <view class="ai-container-hot">
+      <view class="ai-container-hot" bind:tap="ongodetail_xhs">
         <image class="ai-image-hot" src="../../images/icon/hotbooks.jpg"></image>
         <view class="ai-text-hot">
           <text class="title">小红书笔记</text>

@@ -2,7 +2,8 @@
   "pages": [
     "pages/welcome/welcome",
     "pages/index/index",
-    "pages/Ai-tools/Ai-tools"
+    "pages/Ai-tools/Ai-tools",
+    "pages/tools-xhs/tools-xhs"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",

@@ -1,21 +1,19 @@
-// pages/Ai-tools/Ai-tools.js
+// pages/tools-xhs/tools-xhs.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    segmentData:0
-    // segmentData: null
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+
   },
-
-
 
   /**
    * 生命周期函数--监听页面初次渲染完成
@@ -23,19 +21,7 @@ Page({
   onReady() {
 
   },
-// 获取选项栏的数据
-  GetTabinfo(event) {
-    const key = event.detail.activeKey
-    this.setData({
-      segmentData: key
-    })
-  },
-//跳转到xhs详情页面
-ongodetail_xhs(event){
-  wx.navigateTo({
-    url: '../tools-xhs/tools-xhs',
-  })
-},
+
   /**
    * 生命周期函数--监听页面显示
    */
