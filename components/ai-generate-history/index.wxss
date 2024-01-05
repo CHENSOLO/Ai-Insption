@@ -1,0 +1,15 @@
+.ai-generate-history{
+  display: flex;
+  flex-direction: row;
+}
+.generate_history{
+  margin-top: 28rpx;
+  left: 450rpx;
+ 
+}
+.ai-image-hot{
+  margin-top: 28rpx;
+  margin-left: 40rpx;
+  width: 66rpx;
+  height: 61rpx;
+}
