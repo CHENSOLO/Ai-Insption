@@ -1,6 +1,7 @@
 .ai-generate-history{
   display: flex;
   flex-direction: row;
+  margin-bottom: 50rpx;
 }
 .generate_history{
   margin-top: 28rpx;

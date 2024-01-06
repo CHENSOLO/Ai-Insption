@@ -1,3 +1,11 @@
-<view>
+<view class="container">
   <ai-generate />
+  <view class="section">
+    <view class="section__title">选择你的博主类型</view>
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+      <view class="picker">
+        {{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}
+      </view>
+    </picker>
+  </view>
 </view>

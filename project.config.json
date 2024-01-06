@@ -21,7 +21,7 @@
     },
     "condition": false,
     "ignoreDevUnusedFiles": false,
-    "ignoreUploadUnusedFiles": false
+    "ignoreUploadUnusedFiles": true
   },
   "condition": {},
   "editorSetting": {

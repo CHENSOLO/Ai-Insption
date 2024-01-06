@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    multiIndex: [0, 0,],
+    multiArray: [['时尚','美妆','数码'], ['时尚1']]
   },
 
   /**
@@ -14,7 +15,38 @@ Page({
   onLoad(options) {
 
   },
-
+  //获取Array的value值[1:1]
+  bindMultiPickerChange(event) {
+    const value = event.detail.value
+    this.setData({
+      multiIndex: value
+    })
+    console.log(value)
+  },
+  //获取column和value的值
+  bindMultiPickerColumnChange(event) {
+    // console.log(event)
+    var data = {
+      multiIndex: this.data.multiIndex,
+      multiArray: this.data.multiArray
+    }
+    //获取Index索引判断选择 == data.multiIndex[0]
+    data.multiIndex[event.detail.column] = event.detail.value
+    // console.log("yyyy"+data.multiIndex[event.detail.column])
+    switch (data.multiIndex[0]) {
+      case 0:
+        // console.log("xxx" + data.multiIndex[0])
+        data.multiArray[1] = ['时尚1', '时尚2','时尚3'];
+        break;
+      case 1:
+        data.multiArray[1] = ['美妆1', '美妆2','美妆3'];
+        break;
+      case 2:
+        data.multiArray[1] = ['数码1', '数码2','数码3'];
+        break;
+    }
+    this.setData(data);
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

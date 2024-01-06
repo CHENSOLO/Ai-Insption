@@ -1,0 +1,12 @@
+.section__title{
+  margin-bottom: 8px;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.picker{
+  border-radius: 18rpx;
+  margin-left: 40rpx;
+  width: 640rpx;
+  padding: 8px;
+  background-color: #FFFFFF;
+}
