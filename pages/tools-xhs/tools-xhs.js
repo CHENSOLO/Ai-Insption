@@ -21,7 +21,7 @@ Page({
     this.setData({
       multiIndex: value
     })
-    console.log(value)
+    // console.log(value)
   },
   //获取column和value的值
   bindMultiPickerColumnChange(event) {
@@ -45,6 +45,15 @@ Page({
         data.multiArray[1] = ['数码1', '数码2','数码3'];
         break;
     }
+    // console.log(data);
+    // const array0 = data.multiArray[0]
+    // const index0 = data.multiIndex[0]
+    // const array1 = data.multiArray[1]
+    // const index1 = data.multiIndex[1]
+    //获取当前的值并打印保存出来
+    const data_index  = data.multiArray[0][data.multiIndex[0]];
+    const data_value =  data.multiArray[1][data.multiIndex[1]];
+    console.log(data_index,data_value)
     this.setData(data);
   },
   /**
