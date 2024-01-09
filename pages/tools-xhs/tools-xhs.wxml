@@ -1,11 +1,26 @@
 <view class="container">
+  <!-- 1. 生成记录模版 -->
   <ai-generate />
-  <view class="section">
-    <view class="section__title">选择你的博主类型</view>
-    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
-      <view class="picker">
-        {{multiArray[0][multiIndex[0]]}}，{{multiArray[1][multiIndex[1]]}}
-      </view>
-    </picker>
+  <!-- 2. 选择博主类型模版 -->
+  <ai-up-style />
+  <!-- 3. 文档风格类型 -->
+  <!-- 参考https://blog.csdn.net/qq_41219586/article/details/103356859 -->
+  <view>
+  <view class="ai-copywrite-title">
+  <text>选择文案风格</text>
   </view>
+    <view class="ai-copywrite-content" >
+      <text>默认</text>
+      <text>幽默</text>
+      <text>叙事</text>
+      <text>推广</text>
+      <text>评测</text>
+      <text>其他</text>
+      <text>叙事</text>
+      <text>推广</text>
+      <text>评测</text>
+      <text>其他</text>
+    </view>
+  </view>
+
 </view>

@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "ai-generate":"/components/ai-generate-history/index"
+    "ai-generate":"/components/ai-generate-history/index",
+    "ai-up-style":"/components/ai-up-style/index"
   }
 }
