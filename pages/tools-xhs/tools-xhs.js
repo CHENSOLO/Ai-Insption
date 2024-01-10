@@ -1,20 +1,33 @@
 // pages/tools-xhs/tools-xhs.js
 const app = getApp()
+//数据导入
+import { style_data } from "../../data/data"
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    key: 0,
   },
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    this.setData({
+      style_data
+    })
   },
- 
+
+  Checked(event) {
+    const index = event.target.dataset.index
+    const item_data = event.target.dataset.item_data
+    app.item_data = item_data
+    this.setData({
+      key: index,
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

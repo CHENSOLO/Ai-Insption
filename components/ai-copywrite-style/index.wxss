@@ -7,7 +7,6 @@
   margin-bottom: 15rpx;
 
 }
-
 .ai-copywrite-content {
   width: 100%;
   display: flex;

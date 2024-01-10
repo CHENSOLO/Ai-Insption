@@ -1,6 +1,7 @@
 {
   "usingComponents": {
     "ai-generate":"/components/ai-generate-history/index",
-    "ai-up-style":"/components/ai-up-style/index"
+    "ai-up-style":"/components/ai-up-style/index",
+    "ai-copywrite-style":"/components/ai-copywrite-style/index"
   }
 }

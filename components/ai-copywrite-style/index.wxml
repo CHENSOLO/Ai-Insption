@@ -1,11 +1,4 @@
-<view class="container">
-  <!-- 1. 生成记录模版 -->
-  <ai-generate />
-  <!-- 2. 选择博主类型模版 -->
-  <ai-up-style />
-  <!-- 3. 文档风格类型 -->
-  <!-- 参考https://blog.csdn.net/qq_41219586/article/details/103356859 -->
-  <view>
+<view>
     <view class="ai-copywrite-title">
       <text>选择文案风格</text>
     </view>
@@ -18,4 +11,3 @@
     </view>
     </block>
   </view>
-</view>
