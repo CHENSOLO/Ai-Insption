@@ -1,5 +1,4 @@
 // pages/tools-xhs/tools-xhs.js
-const app = getApp()
 //数据导入
 import { style_data } from "../../data/data"
 Page({
@@ -9,6 +8,7 @@ Page({
    */
   data: {
     key: 0,
+    title:"选择文案的风格"
   },
   /**
    * 生命周期函数--监听页面加载
@@ -19,15 +19,7 @@ Page({
     })
   },
 
-  Checked(event) {
-    const index = event.target.dataset.index
-    const item_data = event.target.dataset.item_data
-    app.item_data = item_data
-    this.setData({
-      key: index,
-    })
-  },
-
+  
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -1,6 +1,6 @@
-<view>
+<view class="container">
     <view class="ai-copywrite-title">
-      <text>选择文案风格</text>
+      <slot>{{title}}</slot>
     </view>
     <block>
     <view class="ai-copywrite-content">

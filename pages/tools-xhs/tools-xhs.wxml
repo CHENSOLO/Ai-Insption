@@ -5,17 +5,15 @@
   <ai-up-style />
   <!-- 3. 文档风格类型 -->
   <!-- 参考https://blog.csdn.net/qq_41219586/article/details/103356859 -->
+  <ai-copywrite-style style_data="{{style_data}}">
+    <text>{{title}}</text>
+  </ai-copywrite-style>
   <view>
-    <view class="ai-copywrite-title">
-      <text>选择文案风格</text>
+    <view class="ai-require-title"> 
+    <text>笔记要求</text>
     </view>
-    <block>
-    <view class="ai-copywrite-content">
-      <view wx:for="{{style_data}}" wx:key="index" >
-        <view class="{{key==index?'ai-copywrite-selected':'ai-copywrite-unselect'}}" bind:tap="Checked" 
-        data-index='{{index}}' data-item_data="{{item.styel_text}}">{{item.styel_text}}</view>
-      </view>
+    <view class="textarea-wrp">
+      <textarea  placeholder="尽情描述你的想法~" maxlength='500' show-confirm-bar="true"	 auto-focus="true" stylee="height: 4em" />
     </view>
-    </block>
   </view>
 </view>

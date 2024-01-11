@@ -1,3 +1,6 @@
+.container{
+  margin-bottom: 35rpx;
+}
 .ai-copywrite-title {
   padding-left: 20rpx;
   padding-right: 15rpx;
