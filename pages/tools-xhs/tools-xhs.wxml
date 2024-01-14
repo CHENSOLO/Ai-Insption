@@ -9,15 +9,12 @@
     <text>{{title}}</text>
   </ai-copywrite-style>
   <!-- 4.笔记要求 -->
-  <ai-note-style>
+  <ai-note-style id="noteCopy">
     <text class="note">{{note_title}}</text>
   </ai-note-style>
   <!-- 5. 试一试 -->
   <ai-change-style change_data="{{change_data}}">
     <text>{{change_title}}</text>
   </ai-change-style>
-  <view class="ai-button-generate">
-    <text class="start-text">开始生成</text>
-    <button class="start-generate" ></button>
-  </view>
+  <button bindtap="handleButtonClick" class="start-button-yes">开始生成</button>
 </view>

@@ -1,4 +1,5 @@
 // components/ai-note-style/index.js
+const app = getApp()
 Component({
   
 
@@ -15,21 +16,24 @@ Component({
    * 组件的初始数据
    */
   data: {
-    textLength: 0
+    length: 0,
+    value: ''
   },
 
   /**
    * 组件的方法列表
    */
   methods: {
-    //计算textarea的文字长度
+    //计算textarea的文字长度 并获取该textarea的数据
     handleInput(event) {
-      const text = event.detail.value
-      const length = text.length
+      const text_length = event.detail.cursor
+      const text_value = event.detail.value
       this.setData({
-        textLength: length
+        length: text_length,
+        value: text_value
       })
     },
+    
     // 获取textarea的数据
     // bindFormSubmit(event) {
     //   // console.log(event)

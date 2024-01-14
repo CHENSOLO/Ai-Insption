@@ -1,7 +1,8 @@
 // pages/tools-xhs/tools-xhs.js
 //数据导入
 import { style_data } from "../../data/data"
-import {change_data} from "../../data/data_change"
+import { change_data } from "../../data/data_change"
+const app = getApp()
 Page({
 
   /**
@@ -10,9 +11,9 @@ Page({
   data: {
     key: 0,
     title: "选择文案的风格",
-    note_title:"笔记要求",
-    change_title:"试一试",
-    
+    note_title: "笔记要求",
+    change_title: "试一试",
+    note_data: String,
   },
   /**
    * 生命周期函数--监听页面加载
@@ -23,8 +24,11 @@ Page({
       change_data
     })
   },
+  handleButtonClick(event) {
+    const instance = this.selectComponent('#noteCopy')
+    console.log(instance.data.value);
+  },
 
- 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

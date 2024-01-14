@@ -1,9 +1,9 @@
 <view class="ai-end">
   <view class="ai-require-title">
     <slot></slot>
-    <text class="textcount">{{textLength}}/500</text>
+    <text class="textcount">{{length}}/500</text>
   </view>
   <view class="textarea-wrp">
-    <textarea placeholder="尽情描述你的想法..." maxlength='500' name="textarea" stylee="height: 4em" bindinput="handleInput"></textarea>
+    <textarea placeholder="尽情描述你的想法..." maxlength='500' value="{{value}}" stylee="height: 4em" bindinput="handleInput"></textarea>
   </view>
 </view>

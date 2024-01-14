@@ -1,6 +1,6 @@
 .container {
   margin-top: 35rpx;
-  margin-bottom: 150rpx;
+  margin-bottom: 190rpx;
 }
 
 .ai-change-title {
@@ -44,4 +44,11 @@
   background-color: rgb(194, 213, 241);
   font-size: 27rpx;
   font-weight: bold;
+}
+.tag{
+  margin-top: 70rpx;
+  position: absolute;
+  left: 280rpx;
+  font-size: 20rpx;
+  color: rgb(179, 182, 182);
 }
