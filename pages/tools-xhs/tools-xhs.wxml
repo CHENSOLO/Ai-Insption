@@ -8,12 +8,16 @@
   <ai-copywrite-style style_data="{{style_data}}">
     <text>{{title}}</text>
   </ai-copywrite-style>
-  <view>
-    <view class="ai-require-title"> 
-    <text>笔记要求</text>
-    </view>
-    <view class="textarea-wrp">
-      <textarea  placeholder="尽情描述你的想法~" maxlength='500' show-confirm-bar="true"	 auto-focus="true" stylee="height: 4em" />
-    </view>
+  <!-- 4.笔记要求 -->
+  <ai-note-style>
+    <text class="note">{{note_title}}</text>
+  </ai-note-style>
+  <!-- 5. 试一试 -->
+  <ai-change-style change_data="{{change_data}}">
+    <text>{{change_title}}</text>
+  </ai-change-style>
+  <view class="ai-button-generate">
+    <text class="start-text">开始生成</text>
+    <button class="start-generate" ></button>
   </view>
 </view>

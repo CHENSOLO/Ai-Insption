@@ -1,0 +1,30 @@
+.ai-end {
+  display: flex;
+  flex-direction: column;
+}
+
+.ai-require-title {
+  padding-left: 20rpx;
+  padding-right: 15rpx;
+  margin-left: 20rpx;
+  margin-bottom: 15rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.textcount {
+  font-size: 20rpx;
+  color: rgb(165, 162, 162);
+  margin-right: 27rpx;
+}
+
+.textarea-wrp {
+  display: flex;
+  flex-direction: column;
+  border-radius: 25rpx;
+  margin-right: 35rpx;
+  margin-left: 35rpx;
+  background-color: #fff;
+}

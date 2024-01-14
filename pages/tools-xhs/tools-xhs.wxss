@@ -1,18 +1,10 @@
-.ai-require-title {
-  padding-left: 20rpx;
-  padding-right: 15rpx;
-  margin-left: 20rpx;
-  margin-bottom: 15rpx;
-}
-
-.ai-require-title text {
+.note  {
   font-size: 27rpx;
   font-weight: bold;
 }
-
-.textarea-wrp {
-  border-radius: 25rpx;
-  margin-right: 35rpx;
-  margin-left: 35rpx;
-  background-color: #fff;
+.start-generate{
+  
+  border-radius: 30rpx;
+  height: 80rpx;
+  width: 300rpx;
 }

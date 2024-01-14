@@ -1,0 +1,12 @@
+<view class="container">
+  <view class="ai-change-title">
+    <slot>{{title}}</slot>
+  </view>
+  <block>
+    <view class="ai-change-content">
+      <view wx:for="{{change_data}}" wx:key="index">
+        <view class="{{key==index?'ai-copywrite-selected':'ai-copywrite-unselect'}}" bind:tap="Checked" data-index='{{index}}' data-item_data="{{item.change_text}}">{{item.change_text}}</view>
+      </view>
+    </view>
+  </block>
+</view>
