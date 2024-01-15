@@ -2,19 +2,19 @@
   <!-- 1. 生成记录模版 -->
   <ai-generate />
   <!-- 2. 选择博主类型模版 -->
-  <ai-up-style />
+  <ai-up-style id="upStyle" />
   <!-- 3. 文档风格类型 -->
   <!-- 参考https://blog.csdn.net/qq_41219586/article/details/103356859 -->
-  <ai-copywrite-style style_data="{{style_data}}">
+  <ai-copywrite-style bind:copyWdata="copyWrite" style_data="{{style_data}}">
     <text>{{title}}</text>
   </ai-copywrite-style>
   <!-- 4.笔记要求 -->
-  <ai-note-style id="noteCopy">
+  <ai-note-style id="noteCopy" bind:textareaChange="handleTextareaChange">
     <text class="note">{{note_title}}</text>
   </ai-note-style>
   <!-- 5. 试一试 -->
   <ai-change-style change_data="{{change_data}}">
     <text>{{change_title}}</text>
   </ai-change-style>
-  <button bindtap="handleButtonClick" class="start-button-yes">开始生成</button>
+  <button bindtap="handleButtonClick" disabled="{{disabled}}" class="active">开始生成</button>
 </view>

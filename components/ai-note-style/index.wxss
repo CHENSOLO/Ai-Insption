@@ -28,3 +28,10 @@
   margin-left: 35rpx;
   background-color: #fff;
 }
+.start_prompt{
+  height: 6px;
+  width: 6px;
+  position: relative;
+  right: 130px;
+  top: -3px;
+}

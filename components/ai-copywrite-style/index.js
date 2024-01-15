@@ -1,5 +1,4 @@
 // components/ai-copywrite-style/index.js
-const app = getApp()
 //数据导入
 Component({
 
@@ -15,6 +14,7 @@ Component({
    */
   data: {
     key: 0,
+    myField: null,
   },
 
   /**
@@ -25,11 +25,13 @@ Component({
     Checked(event) {
       const index = event.target.dataset.index
       const item_data = event.target.dataset.item_data
-      app.item_data = item_data
-      // console.log(app.item_data)
+      // console.log(item_data)
+      //子组件触发自定义事件，并传递文本区域的内容给父组件
+      this.triggerEvent('copyWdata', { data: item_data });
       this.setData({
         key: index,
       })
     },
   }
+
 })
