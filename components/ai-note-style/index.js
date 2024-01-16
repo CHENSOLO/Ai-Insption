@@ -7,7 +7,12 @@ Component({
    * 组件的属性列表
    */
   properties: {
-    note_title: String
+    note_title: String,
+    parentValue: {
+      type: String,
+      value: '',
+      observer: 'onParentValueChange'
+    }
   },
 
   /**
@@ -26,19 +31,20 @@ Component({
     handleInput(event) {
       const text_length = event.detail.cursor
       const text_value = event.detail.value
+      // console.log(event)
       //子组件触发自定义事件，并传递文本区域的内容给父组件
-      this.triggerEvent('textareaChange',{text_value})
+      this.triggerEvent('textareaChange', { text_value })
       this.setData({
         length: text_length,
         value: text_value,
       })
     },
-    
-    // 获取textarea的数据
-    // bindFormSubmit(event) {
-    //   // console.log(event)
-    //   const value = event.detail.value.textarea
-    //   console.log(value)
-    // },
+    //观察子组件接收父组件值的改变
+    onParentValueChange(value) {
+      // console.log(value) //苹果电脑测评，150字左右
+      this.setData({
+        value: value
+      })
+    },
   }
 })

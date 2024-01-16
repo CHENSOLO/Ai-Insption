@@ -15,6 +15,7 @@ Page({
     note_data: null,
     copyWdata: String,
     disabled: true,
+    note_value: ''
   },
   /**
    * 生命周期函数--监听页面加载
@@ -36,6 +37,7 @@ Page({
     const copyStyleData = (this.data.copyWdata)
     //获取笔记要求的数据
     const noteData = (noteCopy.data.value);
+    console.log(noteData)
   },
 
   //获取文案风格的数据并存入data
@@ -46,11 +48,21 @@ Page({
     })
   },
   //处理子组件的textare是否有数据更改button使用
-  handleTextareaChange(event) {
+  handleTextareaNote(event) {
+    // console.log(event)
     this.setData({
       disabled: event.detail.text_value === ''
     });
   },
+  //获取子组件传递的content内容渲染到页面
+  updataCb(event) {
+    // console.log(event)
+    this.setData({
+      note_value: event.detail.item_content,
+      disabled: event.detail.item_content === ''
+    })
+  },
+
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -4,34 +4,25 @@
 }
 
 .ai-require-title {
-  padding-left: 20rpx;
-  padding-right: 15rpx;
-  margin-left: 20rpx;
+  margin-left: 40rpx;
   margin-bottom: 15rpx;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: baseline;
+  justify-content: flex-start;
 }
 
 .textcount {
   font-size: 20rpx;
   color: rgb(165, 162, 162);
-  margin-right: 27rpx;
+  margin-left: 500rpx;
 }
-
-.textarea-wrp {
+.textarea{
   display: flex;
   flex-direction: column;
   border-radius: 25rpx;
-  margin-right: 35rpx;
   margin-left: 35rpx;
   background-color: #fff;
+  width: 350px;
 }
-.start_prompt{
-  height: 6px;
-  width: 6px;
-  position: relative;
-  right: 130px;
-  top: -3px;
+.start_prompt {
+  height: 14rpx;
+  width: 14rpx;
 }

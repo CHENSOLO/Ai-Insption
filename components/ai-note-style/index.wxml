@@ -5,6 +5,6 @@
     <text class="textcount">{{length}}/500</text>
   </view>
   <view class="textarea-wrp">
-    <textarea placeholder="尽情描述你的想法..." maxlength='500' value="{{value}}" stylee="height: 4em" bindinput="handleInput"></textarea>
+    <textarea class="textarea" placeholder="尽情描述你的想法..." maxlength='500' value="{{value}}" stylee="height: 4em" bindinput="handleInput"></textarea>
   </view>
 </view>

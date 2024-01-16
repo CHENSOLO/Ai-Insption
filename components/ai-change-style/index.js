@@ -25,8 +25,11 @@ Component({
     Checked(event) {
       const index = event.target.dataset.index
       const item_data = event.target.dataset.item_data
-      app.item_data = item_data
+      const item_content = event.target.dataset.item_content
+      // console.log(item_content)
+      // app.item_data = item_data
       // console.log(app.item_data)
+      this.triggerEvent('updata', { item_content }) //子组件数据传递父组件
       this.setData({
         key: index,
       })
