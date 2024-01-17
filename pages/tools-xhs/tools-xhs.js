@@ -2,6 +2,7 @@
 //数据导入
 import { style_data } from "../../data/data"
 import { change_data } from "../../data/data_change"
+import { up_title_data } from "../../data/data_up"
 Page({
 
   /**
@@ -15,7 +16,9 @@ Page({
     note_data: null,
     copyWdata: String,
     disabled: true,
-    note_value: ''
+    note_value: '',
+    up_name: [],
+    up_content:[],
   },
   /**
    * 生命周期函数--监听页面加载
@@ -23,8 +26,14 @@ Page({
   onLoad(options) {
     this.setData({
       style_data,
-      change_data
+      change_data,
+      up_name_data,
+      up_content_data,
     })
+    const up_name_data = up_title_data.map(up_title_data => up_title_data.name)
+    const up_content_data = up_title_data.map(up_title_data => up_title_data.content)
+    // console.log(up_name_data)
+    // console.log(up_content_data)
   },
   //处理开始生成按钮的功能
   handleButtonClick(event) {
