@@ -28,8 +28,8 @@ Component({
       const item_content = event.target.dataset.item_content
       // console.log(item_content)
       // app.item_data = item_data
-      // console.log(app.item_data)
-      this.triggerEvent('updata', { item_content }) //子组件数据传递父组件
+      // console.log(index)
+      this.triggerEvent('updata', { item_content ,index}) //子组件数据传递父组件
       this.setData({
         key: index,
       })

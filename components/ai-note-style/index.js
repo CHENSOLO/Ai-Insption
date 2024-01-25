@@ -14,7 +14,6 @@ Component({
       observer: 'onParentValueChange'
     }
   },
-
   /**
    * 组件的初始数据
    */
@@ -42,8 +41,11 @@ Component({
     //观察子组件接收父组件值的改变
     onParentValueChange(value) {
       // console.log(value) //苹果电脑测评，150字左右
+      const value_length = value.length
+      // console.log(value_length);
       this.setData({
-        value: value
+        value: value,
+        length: value_length,
       })
     },
   }

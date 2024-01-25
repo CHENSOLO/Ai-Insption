@@ -2,7 +2,6 @@
 //数据导入
 import { style_data } from "../../data/data"
 import { change_data } from "../../data/data_change"
-import { up_title_data } from "../../data/data_up"
 Page({
 
   /**
@@ -17,8 +16,6 @@ Page({
     copyWdata: String,
     disabled: true,
     note_value: '',
-    up_name: [],
-    up_content:[],
   },
   /**
    * 生命周期函数--监听页面加载
@@ -27,13 +24,8 @@ Page({
     this.setData({
       style_data,
       change_data,
-      up_name_data,
-      up_content_data,
     })
-    const up_name_data = up_title_data.map(up_title_data => up_title_data.name)
-    const up_content_data = up_title_data.map(up_title_data => up_title_data.content)
-    // console.log(up_name_data)
-    // console.log(up_content_data)
+
   },
   //处理开始生成按钮的功能
   handleButtonClick(event) {
@@ -46,12 +38,13 @@ Page({
     const copyStyleData = (this.data.copyWdata)
     //获取笔记要求的数据
     const noteData = (noteCopy.data.value);
-    console.log(noteData)
+    console.log(upStyleData1, upStyleData2, copyStyleData, noteData)
   },
 
-  //获取文案风格的数据并存入data
+  //点击获取文案风格的数据并存入data
   copyWrite(event) {
     const copyWdata = (event.detail.data);
+    // console.log(copyWdata)
     this.setData({
       copyWdata: copyWdata
     })
@@ -63,15 +56,44 @@ Page({
       disabled: event.detail.text_value === ''
     });
   },
-  //获取子组件传递的content内容渲染到页面
-  updataCb(event) {
+  //获取笔记要求子组件传递的content内容渲染到页面
+  updataNote(event) {
     // console.log(event)
+    //获取文案风格的key值传递到子组件
+    const copywrite = this.selectComponent('#copywrite')
+    //获取博主类型的key值传递到子组件
+    const upStyle = this.selectComponent('#upStyle')
+    //获取试一试每个字段的index用于判断选择的博主类型并渲染
+    const index = event.detail.index
+    const value_map = {
+      0: [1, 1],
+      1: [4, 4],
+      2: [8, 8],
+      3: [0, 0],
+      4: [4, 4],
+      5: [4, 7],
+    }
+    upStyle.setData({
+      multiIndex: value_map[index]
+    });
+    // switch (index) {
+    //   case 0:
+    //     upStyle.setData({
+    //       multiIndex: [1, 1]
+    //     });
+    //     break;
+
+    //每次点击试一试，文案风格都会选择默认选项
+    copywrite.setData({
+      key: 0,
+    })
+    //获取子组件传递的内容渲染到textarea组件上
     this.setData({
       note_value: event.detail.item_content,
-      disabled: event.detail.item_content === ''
+      disabled: event.detail.item_content === '',
+      copyWdata: '默认',
     })
   },
-
   /**
    * 生命周期函数--监听页面初次渲染完成
    */

@@ -1,6 +1,7 @@
 .ai-end {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50rpx;
 }
 
 .ai-require-title {

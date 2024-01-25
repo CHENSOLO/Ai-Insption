@@ -8,15 +8,13 @@ Component({
   properties: {
     style_data: null,
   },
-
   /**
    * 组件的初始数据
    */
   data: {
-    key: 0,
-    myField: null,
+    key: '',
+    value: '',
   },
-
   /**
    * 组件的方法列表
    */
@@ -25,7 +23,7 @@ Component({
     Checked(event) {
       const index = event.target.dataset.index
       const item_data = event.target.dataset.item_data
-      // console.log(item_data)
+      // console.log(index)
       //子组件触发自定义事件，并传递文本区域的内容给父组件
       this.triggerEvent('copyWdata', { data: item_data });
       this.setData({
@@ -33,5 +31,9 @@ Component({
       })
     },
   }
-
 })
+
+
+
+
+
