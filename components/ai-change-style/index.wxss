@@ -41,9 +41,26 @@
   line-height: 65rpx;
   margin-left: 12rpx;
   margin-bottom: 12rpx;
-  background-color: rgb(194, 213, 241);
+  animation: fade-in 1s ease forwards;
   font-size: 27rpx;
-  font-weight: bold;
+}
+
+@keyframes fade-in {
+  0% {
+    background-color: white;
+  }
+
+  /* 初始状态的背景色 */
+  50% {
+    background-color: rgb(224, 223, 223);
+  }
+
+  /* 结束状态的背景色 */
+  100% {
+    background-color: white;
+  }
+
+  /* 初始状态的背景色 */
 }
 
 .tag {

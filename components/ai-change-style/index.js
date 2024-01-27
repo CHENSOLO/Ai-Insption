@@ -29,7 +29,7 @@ Component({
       // console.log(item_content)
       // app.item_data = item_data
       // console.log(index)
-      this.triggerEvent('updata', { item_content ,index}) //子组件数据传递父组件
+      this.triggerEvent('updata', { item_content, index }) //子组件数据传递父组件
       this.setData({
         key: index,
       })

@@ -5,5 +5,6 @@
     "ai-copywrite-style":"/components/ai-copywrite-style/index",
     "ai-note-style":"/components/ai-note-style/index",
     "ai-change-style": "/components/ai-change-style/index"
-  }
+  },
+  "enablePullDownRefresh": false
 }

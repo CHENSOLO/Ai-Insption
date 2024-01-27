@@ -1,18 +1,25 @@
 // pages/Ai-tools/Ai-tools.js
+//数据导入
+import { HotList } from "../../data/ai_tools_data"
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    segmentData:0
+    segmentData:0,
     // segmentData: null
+    
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    this.setData({
+      HotList
+    })
+    console.log(HotList)
   },
 
 
@@ -30,6 +37,12 @@ Page({
       segmentData: key
     })
   },
+//获取热门专栏信息
+GetHotinfo(event){
+  console.log(event)
+  
+},
+
 //跳转到xhs详情页面
 ongodetail_xhs(event){
   wx.navigateTo({
