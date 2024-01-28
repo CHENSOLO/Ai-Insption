@@ -3,7 +3,12 @@
     "pages/welcome/welcome",
     "pages/index/index",
     "pages/Ai-tools/Ai-tools",
-    "pages/tools-xhs/tools-xhs"
+    "pages/tools/tools-xhs/tools-xhs",
+    "pages/tools/tools-zh/tools-zh",
+    "pages/tools/tools-td/tools-td",
+    "pages/tools/tools-gg/tools-gg",
+    "pages/tools/tools-lw/tools-lw",
+    "pages/tools/tools-pxx/tools-pxx"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",

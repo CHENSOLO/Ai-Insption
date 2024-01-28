@@ -1,7 +1,7 @@
 // pages/tools-xhs/tools-xhs.js
 //数据导入
-import { style_data } from "../../data/data"
-import { change_data } from "../../data/data_change"
+import { style_data } from "../../../data/data"
+import { change_data } from "../../../data/data_change"
 Page({
 
   /**

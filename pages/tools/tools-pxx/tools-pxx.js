@@ -1,24 +1,18 @@
-// pages/Ai-tools/Ai-tools.js
-//数据导入
-import { HotList } from "../../data/ai_tools_data"
+// pages/tools/tools-pxx/tools-pxx.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    segmentData:0,
-    // segmentData: null
-    
+
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    this.setData({
-      HotList
-    })
+
   },
 
   /**
@@ -27,24 +21,7 @@ Page({
   onReady() {
 
   },
-// 获取选项栏的数据
-  GetTabinfo(event) {
-    const key = event.detail.activeKey
-    this.setData({
-      segmentData: key
-    })
-  },
 
-
-//跳转到xhs详情页面
-ongodetail_xhs(event){
-  const name = event.target.dataset.name
-  console.log(name);
-  // 根据获取id跳转到不同的页面
-  wx.navigateTo({
-    url: '../tools/' + name + '/' + name
-  })
-},
   /**
    * 生命周期函数--监听页面显示
    */

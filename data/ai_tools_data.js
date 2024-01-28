@@ -1,25 +1,36 @@
 var HotList = [{
-  id:1,
+  hot_id: 0,
+  name:'tools-xhs',
   title: "小红书笔记",
   content: "写笔记从未如此轻松",
   imgSrc: "/images/icon/hotbooks.jpg"
 },{
+  hot_id: 1,
+  name:'tools-zh',
   title: "知乎专业回答",
   content: "成为更专业的达人",
   imgSrc: "/images/icon/zhihu.jpg"
 },{
+  hot_id: 2,
+  name:'tools-td',
   title: "探店日记",
   content: "助力探店计划进行",
   imgSrc: "/images/icon/tandian.jpg"
 },{
+  hot_id: 3,
+  name:'tools-gg',
   title: "广告营销/宣传语",
   content: "广告营销小能手",
   imgSrc: "/images/icon/guanggao.jpg"
 },{
+  hot_id: 4,
+  name:'tools-lw',
   title: "毕业/答辩论文",
   content: "大纲/润色/降重",
   imgSrc: "/images/icon/lunwenbiji.jpg"
 },{
+  hot_id: 5,
+  name:'tools-pxx',
   title: "拼夕夕评价",
   content: "快速升级模板",
   imgSrc: "/images/icon/pinduoduo.jpg"
