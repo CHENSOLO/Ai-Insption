@@ -38,8 +38,10 @@ Page({
 
 //跳转到xhs详情页面
 ongodetail_xhs(event){
+
+  //获取跳转的名称
   const name = event.target.dataset.name
-  console.log(name);
+  // console.log(event);
   // 根据获取id跳转到不同的页面
   wx.navigateTo({
     url: '../tools/' + name + '/' + name

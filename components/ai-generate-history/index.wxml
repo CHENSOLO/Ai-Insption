@@ -1,4 +1,4 @@
 <view class="ai-generate-history">
-  <image class="ai-image-hot" src="../../images/icon/hotbooks.jpg"/>
+  <image class="ai-image-hot" src="{{img_data}}"/>
   <l-button size="mini" l-class="generate_history" icon="history" icon-size="28" icon-color="#FFFFFF" bg-color="#CCCCCC" shape="circle">生成记录</l-button>
 </view>

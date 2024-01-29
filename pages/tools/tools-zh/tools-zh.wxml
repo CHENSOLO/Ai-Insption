@@ -1,2 +1,5 @@
-<!--pages/tools/tools-zh/tools-zh.wxml-->
-<text>pages/tools/tools-zh/tools-zh.wxml</text>
+<view class="container">
+  <!-- 1. 生成记录模版 -->
+  <ai-generate img_data="{{img_data}}"/>
+
+</view>

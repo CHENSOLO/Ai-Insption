@@ -1,11 +1,13 @@
 // pages/tools/tools-zh/tools-zh.js
+import { HotList } from "../../../data/ai_tools_data"
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    HotList
   },
 
   /**
@@ -13,6 +15,11 @@ Page({
    */
   onLoad(options) {
 
+    const img_data = (HotList[1].imgSrc)
+    this.setData({
+      img_data
+    })
+    
   },
 
   /**

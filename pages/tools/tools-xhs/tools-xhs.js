@@ -2,6 +2,8 @@
 //数据导入
 import { style_data } from "../../../data/data"
 import { change_data } from "../../../data/data_change"
+import { HotList } from "../../../data/ai_tools_data"
+
 Page({
 
   /**
@@ -21,9 +23,11 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
+    const img_data = (HotList[0].imgSrc)
     this.setData({
       style_data,
       change_data,
+      img_data
     })
 
   },
