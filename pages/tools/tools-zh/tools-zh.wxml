@@ -1,5 +1,4 @@
 <view class="container">
   <!-- 1. 生成记录模版 -->
-  <ai-generate img_data="{{img_data}}"/>
-
+  <ai-generate icon_data="{{icon_data}}"/>
 </view>

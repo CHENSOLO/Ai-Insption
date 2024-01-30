@@ -23,11 +23,12 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-    const img_data = (HotList[0].imgSrc)
+    //获取到对应id的icon
+    const imgsrc = (HotList[options.id].imgSrc);
     this.setData({
       style_data,
       change_data,
-      img_data
+      icon_data: imgsrc
     })
 
   },

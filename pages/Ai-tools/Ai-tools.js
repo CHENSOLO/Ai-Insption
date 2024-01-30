@@ -7,9 +7,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-    segmentData:0,
+    segmentData: 0,
     // segmentData: null
-    
+
   },
 
   /**
@@ -27,7 +27,7 @@ Page({
   onReady() {
 
   },
-// 获取选项栏的数据
+  // 获取选项栏的数据
   GetTabinfo(event) {
     const key = event.detail.activeKey
     this.setData({
@@ -36,17 +36,17 @@ Page({
   },
 
 
-//跳转到xhs详情页面
-ongodetail_xhs(event){
-
-  //获取跳转的名称
-  const name = event.target.dataset.name
-  // console.log(event);
-  // 根据获取id跳转到不同的页面
-  wx.navigateTo({
-    url: '../tools/' + name + '/' + name
-  })
-},
+  //跳转到xhs详情页面
+  ongodetail_xhs(event) {
+    // 获取跳转的id
+    const id = event.target.dataset.id
+    //获取跳转的名称
+    const name = event.target.dataset.name
+    // 根据获取id跳转到不同的页面
+    wx.navigateTo({
+      url: '../tools/' + name + '/' + name + '?id=' + id
+    })
+  },
   /**
    * 生命周期函数--监听页面显示
    */

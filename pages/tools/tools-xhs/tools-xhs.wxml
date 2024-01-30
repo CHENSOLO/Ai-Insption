@@ -1,6 +1,6 @@
 <view class="container">
   <!-- 1. 生成记录模版 -->
-  <ai-generate img_data="{{img_data}}" />
+  <ai-generate icon_data="{{icon_data}}" />
   <!-- 2. 选择博主类型模版 -->
   <ai-up-style id="upStyle" up_name_data="{{up_name_data}}" />
   <!-- 3. 文档风格类型 -->
@@ -18,6 +18,6 @@
   </ai-change-style>
   <!-- 6.button生成 -->
   <view>
-    <button bindtap="handleButtonClick" disabled="{{disabled}}"  class="active_button">开始生成</button>
+    <button bindtap="handleButtonClick" disabled="{{disabled}}" class="active_button">开始生成</button>
   </view>
 </view>

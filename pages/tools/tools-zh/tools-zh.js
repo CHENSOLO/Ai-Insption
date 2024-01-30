@@ -7,19 +7,19 @@ Page({
    * 页面的初始数据
    */
   data: {
-    HotList
+    HotList,
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
-    const img_data = (HotList[1].imgSrc)
+    //获取到对应id的icon
+    const imgsrc = (HotList[options.id].imgSrc);
+    // console.log(HotList[0])
     this.setData({
-      img_data
+      icon_data: imgsrc
     })
-    
   },
 
   /**
