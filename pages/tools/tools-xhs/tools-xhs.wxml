@@ -13,7 +13,7 @@
     <text class="note">{{note_title}}</text>
   </ai-note-style>
   <!-- 5. 试一试 -->
-  <ai-change-style change_data="{{change_data}}" bind:updata="updataNote">
+  <ai-change-style data="{{xhs_data}}" bind:updata="updataNote">
     <text>{{change_title}}</text>
   </ai-change-style>
   <!-- 6.button生成 -->

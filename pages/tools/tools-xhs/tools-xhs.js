@@ -1,7 +1,7 @@
 // pages/tools-xhs/tools-xhs.js
 //数据导入
 import { style_data } from "../../../data/data"
-import { change_data } from "../../../data/data_change"
+import { xhs_data } from "../../../data/data_change"
 import { HotList } from "../../../data/ai_tools_data"
 
 Page({
@@ -27,7 +27,7 @@ Page({
     const imgsrc = (HotList[options.id].imgSrc);
     this.setData({
       style_data,
-      change_data,
+      xhs_data,
       icon_data: imgsrc
     })
 

@@ -1,2 +1,21 @@
-<!--pages/tools/tools-td/tools-td.wxml-->
-<text>pages/tools/tools-td/tools-td.wxml</text>
+<view class="container">
+  <!-- 1. 生成记录模版 -->
+  <ai-generate icon_data="{{icon_data}}" />
+  <!-- 3. 文档风格类型 -->
+  <!-- 参考https://blog.csdn.net/qq_41219586/article/details/103356859 -->
+  <ai-copywrite-style bind:copyWdata="copyWrite" style_data="{{style_data}}" id="copywrite">
+    <text>{{title}}</text>
+  </ai-copywrite-style>
+  <!-- 4.笔记要求 -->
+  <ai-note-style id="noteCopy" bind:textareaChange="handleTextareaNote" parentValue="{{note_value}}">
+    <text class="note">{{note_title}}</text>
+  </ai-note-style>
+  <!-- 5. 试一试 -->
+  <ai-change-style data="{{td_data}}" bind:updata="updataNote">
+    <text>{{change_title}}</text>
+  </ai-change-style>
+  <!-- 6.button生成 -->
+  <view>
+    <button bindtap="handleButtonClick" disabled="{{disabled}}" class="active_button">开始生成</button>
+  </view>
+</view>
