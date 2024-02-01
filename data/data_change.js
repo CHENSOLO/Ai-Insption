@@ -1,3 +1,4 @@
+//小红书试一试数据
 var xhs_data = [{
   id: 0,
   title: "产品评测",
@@ -27,6 +28,7 @@ var xhs_data = [{
   title: "citywalk",
   content: "新时代的citywalk是什么意思"
 }];
+//知乎试一试数据
 var zh_data = [{
   id: 0,
   title: "年收入水平",
@@ -47,6 +49,7 @@ var zh_data = [{
   content: "自媒体通过那些平台可以达到收益"
 
 }, ]
+//探店试一试数据
 var td_data = [{
   id: 0,
   title: "火锅",
@@ -57,10 +60,21 @@ var td_data = [{
   content: "某某剧本杀主题餐厅，剧本主题：谜案追凶  "
 
 }, ]
+//广告营销试一试数据
+var gg_data = [{
+  id: 0,
+  title: "民宿",
+  content: "云南大理民宿广告营销文案，100字左右"
+}, {
+  id: 1,
+  title: "鸡爪",
+  content: "香辣鸡爪营销文案，100字左右"
+}, ]
 
 //导出
 export {
   xhs_data,
   zh_data,
   td_data,
+  gg_data,
 }

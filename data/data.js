@@ -1,3 +1,4 @@
+//默认文案风格数据
 var style_data = [{
   id: 0,
   styel_text: "默认",
@@ -29,8 +30,46 @@ var style_data = [{
   id: 9,
   styel_text: "其他",
 }]
-
+//长度模版数据
+var length_data = [{
+  id: 0,
+  styel_text: "短篇",
+}, {
+  id: 1,
+  styel_text: "中篇",
+}, {
+  id: 2,
+  styel_text: "长篇",
+},]
+//语言模版数据
+var language_data = [{
+  id: 0,
+  styel_text: "中文",
+}, {
+  id: 1,
+  styel_text: "英文",
+}, ]
+//论文生成模版数据
+var lwmd_data = [{
+  id: 0,
+  styel_text: "大纲",
+}, {
+  id: 1,
+  styel_text: "扩写",
+}, {
+  id: 2,
+  styel_text: "润色",
+},{
+  id: 3,
+  styel_text: "降重",
+},{
+  id: 4,
+  styel_text: "综述",
+},]
 //导出
 export { 
-  style_data
+  style_data,
+  length_data,
+  language_data,
+  lwmd_data,
 }
