@@ -66,10 +66,28 @@ var lwmd_data = [{
   id: 4,
   styel_text: "综述",
 },]
+//论文生成模版数据
+var pxx_data = [{
+  id: 0,
+  styel_text: "默认",
+},{
+  id: 1,
+  styel_text: "超棒",
+},{
+  id: 2,
+  styel_text: "不错",
+},{
+  id: 3,
+  styel_text: "中等",
+},{
+  id: 4,
+  styel_text: "较差",
+},]
 //导出
 export { 
   style_data,
   length_data,
   language_data,
   lwmd_data,
+  pxx_data,
 }

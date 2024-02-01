@@ -14,7 +14,8 @@ Page({
     note_title: "店铺信息",
     title: "选择文案风格",
     copyWdata: String,
-
+    change_title: "试一试",
+    disabled: true
   },
 
   /**

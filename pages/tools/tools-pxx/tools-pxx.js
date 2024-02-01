@@ -1,19 +1,76 @@
-// pages/tools/tools-pxx/tools-pxx.js
+// pages/tools/tools-td/tools-td.js
+import { HotList } from "../../../data/ai_tools_data"
+import { pxx_data } from "../../../data/data"
+import { pxx_data_try } from "../../../data/data_change"
+
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-
+    key: 0,
+    HotList,
+    note_title: "商品信息",
+    title: "请选择评价星级",
+    copyWdata: String,
+    change_title: "试一试",
+    disabled: true
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad(options) {
-
+    //获取到对应id的icon
+    const imgsrc = (HotList[options.id].imgSrc);
+    this.setData({
+      icon_data: imgsrc,
+      pxx_data,
+      pxx_data_try,
+    })
   },
+  //处理开始生成按钮的功能
+  handleButtonClick(event) {
+    //获取笔记要求的数据
+    const noteCopy = this.selectComponent('#noteCopy')
+    const noteData = (noteCopy.data.value);
+    //获取文案风格的数据
+    const copyStyleData = (this.data.copyWdata)
+    console.log(noteData,copyStyleData)
+  },
+  //点击获取文案风格的数据并存入data
+  copyWrite(event) {
+    const copyWdata = (event.detail.data);
+    // console.log(copyWdata)
+    this.setData({
+      copyWdata: copyWdata
+    })
+  },
+  //处理子组件的textare是否有数据更改button使用
+  handleTextareaNote(event) {
+    // console.log(event)
+    this.setData({
+      disabled: event.detail.text_value === ''
+    });
+  },
+  //获取笔记要求子组件传递的content内容渲染到页面
+  updataNote(event) {
+    //获取文案风格的key值传递到子组件
+    const copywrite = this.selectComponent('#copywrite')
+    //每次点击试一试，文案风格都会选择默认选项
+    copywrite.setData({
+      key: 0,
+    })
+    //获取子组件传递的内容渲染到textarea组件上
+    this.setData({
+      note_value: event.detail.item_content,
+      disabled: event.detail.item_content === '',
+      copyWdata: '默认',
+
+    })
+  },
+
 
   /**
    * 生命周期函数--监听页面初次渲染完成

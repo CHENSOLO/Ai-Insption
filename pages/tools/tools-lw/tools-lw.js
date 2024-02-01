@@ -14,6 +14,7 @@ Page({
     title: "语言",
     title2: "论文生成类型",
     copyWdata: String,
+    copylw_data: String,
     disabled: true
   },
 
@@ -36,7 +37,9 @@ Page({
     const noteData = (noteCopy.data.value);
     //获取文案风格的数据
     const copyStyleData = (this.data.copyWdata)
-    console.log(noteData, copyStyleData)
+    //获取论文生产类型数据(
+    const copylw_data = (this.data.copylw_data)
+    console.log(noteData, copyStyleData,copylw_data)
   },
   //点击获取文案风格的数据并存入data
   copyWrite(event) {
@@ -44,6 +47,12 @@ Page({
     // console.log(copyWdata)
     this.setData({
       copyWdata: copyWdata
+    })
+  },
+  copylw(event) {
+    const copylw_data  = (event.detail.data);
+    this.setData({
+      copylw_data: copylw_data
     })
   },
   //处理子组件的textare是否有数据更改button使用
@@ -65,8 +74,6 @@ Page({
     this.setData({
       note_value: event.detail.item_content,
       disabled: event.detail.item_content === '',
-      copyWdata: '短篇',
-
     })
   },
 

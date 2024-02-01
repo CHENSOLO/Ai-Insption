@@ -70,6 +70,21 @@ var gg_data = [{
   title: "鸡爪",
   content: "香辣鸡爪营销文案，100字左右"
 }, ]
+//pxx试一试数据
+var pxx_data_try = [{
+  id: 0,
+  title: "猫窝",
+  content: "猫窝的商品评价,需要口语的表述,大概50个字内"
+}, {
+  id: 1,
+  title: "抱枕",
+  content: "抱枕的使用感受评价,50个字内"
+}, 
+{
+  id: 2,
+  title: "运动鞋",
+  content: "男士运动鞋的评价,使用感受如何,请口语化,大概50字左右"
+},]
 
 //导出
 export {
@@ -77,4 +92,5 @@ export {
   zh_data,
   td_data,
   gg_data,
+  pxx_data_try,
 }
