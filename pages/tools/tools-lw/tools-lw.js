@@ -1,5 +1,5 @@
 // pages/tools/tools-td/tools-td.js
-import { HotList } from "../../../data/ai_tools_data"
+import { HotList} from "../../../data/ai_tools_data"
 import { language_data, lwmd_data } from "../../../data/data"
 
 Page({
@@ -24,6 +24,8 @@ Page({
   onLoad(options) {
     //获取到对应id的icon
     const imgsrc = (HotList[options.id].imgSrc);
+    // const imgsrc2 = (StudyList[options.id].imgSrc);
+    // console.log(imgsrc2,imgsrc)
     this.setData({
       icon_data: imgsrc,
       language_data,

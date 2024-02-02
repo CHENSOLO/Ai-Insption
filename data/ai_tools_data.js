@@ -34,9 +34,35 @@ var HotList = [{
   title: "拼夕夕评价",
   content: "快速升级模板",
   imgSrc: "/images/icon/pinduoduo.jpg"
-}]
+}];
+var StudyList = [{
+  study_id: 6,
+  name:'tools-lw',
+  title: "毕业/答辩论文",
+  content: "大纲/润色/降重",
+  imgSrc: "/images/icon/lunwenbiji.jpg"
+},{
+  study_id: 7,
+  name:'tools-zw',
+  title: "写作文",
+  content: "小学/初高中/作文",
+  imgSrc: "/images/icon/zw.jpg"
+},{
+  study_id: 8,
+  name:'tools-qjfx',
+  title: "专业前景分析",
+  content: "高考志愿/行业前景",
+  imgSrc: "/images/icon/qjfx.jpg"
+},{
+  study_id: 9,
+  name:'tools-kwkd',
+  title: "快问快答",
+  content: "有问必解,专业解答",
+  imgSrc: "/images/icon/kwkd.jpg"
+},]
 
 
 export {
-  HotList
+  HotList,
+  StudyList
 }

@@ -8,7 +8,10 @@
     "pages/tools/tools-td/tools-td",
     "pages/tools/tools-gg/tools-gg",
     "pages/tools/tools-lw/tools-lw",
-    "pages/tools/tools-pxx/tools-pxx"
+    "pages/tools/tools-pxx/tools-pxx",
+    "pages/tools/tools-zw/tools-zw",
+    "pages/tools/tools-qjfx/tools-qjfx",
+    "pages/tools/tools-kwkd/tools-kwkd"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",

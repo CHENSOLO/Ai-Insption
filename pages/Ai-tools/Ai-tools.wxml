@@ -5,50 +5,44 @@
   <view class="ai-segment">
     <l-segment l-class="ai-segment-selector" active-key="0" bind:linchange="GetTabinfo" animated-for-line="true">
       <l-segment-item tab="热门" key="0" />
-      <l-segment-item tab="上新" key="1" />
-      <l-segment-item tab="学习" key="2" />
-      <l-segment-item tab="工作" key="3" />
-      <l-segment-item tab="社交" key="4" />
-      <l-segment-item tab="运营" key="5" />
+      <l-segment-item tab="学习" key="1" />
+      <l-segment-item tab="工作" key="2" />
+      <l-segment-item tab="社交" key="3" />
+      <l-segment-item tab="运营" key="4" />
     </l-segment>
   </view>
   <!-- 工具栏 -->
   <view class="ai-container-all">
     <!-- 默认为0 -->
-  <view wx:if="{{segmentData==0}}" class="ai-container-tools" >
-    <block wx:for="{{HotList}}" wx:key="index">
-      <view class="ai-container-hot" bind:tap="ongodetail_xhs" data-name="{{item.name}}" data-id="{{item.hot_id}}">
-        <image class="ai-image-hot" src="{{item.imgSrc}}"/>
-        <view class="ai-text-hot">
-          <text class="title">{{item.title}}</text>
-          <text class="content">{{item.content}}</text>
+    <view wx:if="{{segmentData==0}}" class="ai-container-tools">
+      <block wx:for="{{HotList}}" wx:key="index">
+        <view class="ai-container-hot" bind:tap="ongodetail_xhs" data-name="{{item.name}}" data-id="{{item.hot_id}}">
+          <image class="ai-image-hot" src="{{item.imgSrc}}" />
+          <view class="ai-text-hot">
+            <text class="title">{{item.title}}</text>
+            <text class="content">{{item.content}}</text>
+          </view>
         </view>
-      </view>
-    </block>
-  </view>
+      </block>
+    </view>
     <!-- 为1 -->
     <view wx:if="{{segmentData==1}}" class="ai-container-tools">
-      <view class="ai-container-hot">
-        <image class="ai-image-hot" src="../../images/icon/hotbooks.jpg"></image>
-        <view class="ai-text-hot">
-          <text class="title">上新笔记</text>
-          <text class="content">写笔记从未如此轻松</text>
+      <block wx:for="{{StudyList}}" wx:key="index">
+        <view class="ai-container-hot" bind:tap="ongodetail_xhs" data-name="{{item.name}}" data-id="{{item.study_id}}">
+          <image class="ai-image-hot" src="{{item.imgSrc}}" />
+          <view class="ai-text-hot">
+            <text class="title">{{item.title}}</text>
+            <text class="content">{{item.content}}</text>
+          </view>
         </view>
-      </view>
-      <view class="ai-container-hot">
-        <image class="ai-image-hot" src="../../images/icon/hotbooks.jpg"></image>
-        <view class="ai-text-hot">
-          <text class="title">上新笔记</text>
-          <text class="content">写笔记从未如此轻松</text>
-        </view>
-      </view>
+      </block>
     </view>
     <!-- 为2 -->
     <view wx:if="{{segmentData==2}}" class="ai-container-tools">
       <view class="ai-container-hot">
         <image class="ai-image-hot" src="../../images/icon/hotbooks.jpg"></image>
         <view class="ai-text-hot">
-          <text class="title">学习笔记</text>
+          <text class="title">工作笔记</text>
           <text class="content">写笔记从未如此轻松</text>
         </view>
       </view>
@@ -58,23 +52,13 @@
       <view class="ai-container-hot">
         <image class="ai-image-hot" src="../../images/icon/hotbooks.jpg"></image>
         <view class="ai-text-hot">
-          <text class="title">工作笔记</text>
+          <text class="title">社交笔记</text>
           <text class="content">写笔记从未如此轻松</text>
         </view>
       </view>
     </view>
     <!-- 为4 -->
     <view wx:if="{{segmentData==4}}" class="ai-container-tools">
-      <view class="ai-container-hot">
-        <image class="ai-image-hot" src="../../images/icon/hotbooks.jpg"></image>
-        <view class="ai-text-hot">
-          <text class="title">社交笔记</text>
-          <text class="content">写笔记从未如此轻松</text>
-        </view>
-      </view>
-    </view>
-    <!-- 为5 -->
-    <view wx:if="{{segmentData==5}}" class="ai-container-tools">
       <view class="ai-container-hot">
         <image class="ai-image-hot" src="../../images/icon/hotbooks.jpg"></image>
         <view class="ai-text-hot">
