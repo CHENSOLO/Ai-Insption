@@ -15,7 +15,7 @@
   <view class="ai-container-all">
     <!-- 默认为0 -->
     <view wx:if="{{segmentData==0}}" class="ai-container-tools">
-      <block wx:for="{{HotList}}" wx:key="index">
+      <block wx:for="{{HotList}}" wx:key="index" wx:if="{{ item.hot }}">
         <view class="ai-container-hot" bind:tap="ongodetail_xhs" data-name="{{item.name}}" data-id="{{item.hot_id}}">
           <image class="ai-image-hot" src="{{item.imgSrc}}" />
           <view class="ai-text-hot">
@@ -27,8 +27,8 @@
     </view>
     <!-- 为1 -->
     <view wx:if="{{segmentData==1}}" class="ai-container-tools">
-      <block wx:for="{{StudyList}}" wx:key="index">
-        <view class="ai-container-hot" bind:tap="ongodetail_xhs" data-name="{{item.name}}" data-id="{{item.study_id}}">
+      <block wx:for="{{HotList}}" wx:key="index" wx:if="{{ item.study }}">
+        <view class="ai-container-hot" bind:tap="ongodetail_xhs" data-name="{{item.name}}" data-id="{{item.hot_id}}">
           <image class="ai-image-hot" src="{{item.imgSrc}}" />
           <view class="ai-text-hot">
             <text class="title">{{item.title}}</text>

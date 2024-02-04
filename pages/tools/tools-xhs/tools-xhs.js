@@ -15,7 +15,7 @@ Page({
     note_title: "笔记要求",
     change_title: "试一试",
     note_data: null,
-    copyWdata: String,
+    copyWdata: "默认",
     disabled: true,
     note_value: '',
   },

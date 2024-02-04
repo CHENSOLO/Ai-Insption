@@ -13,7 +13,7 @@ Page({
     HotList,
     note_title: "产品名称",
     title: "篇幅长度",
-    copyWdata: String,
+    copyWdata: "短篇",
     change_title: "试一试",
     disabled: true
   },

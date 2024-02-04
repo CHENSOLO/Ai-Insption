@@ -13,7 +13,7 @@ Page({
     HotList,
     note_title: "店铺信息",
     title: "选择文案风格",
-    copyWdata: String,
+    copyWdata: "默认",
     change_title: "试一试",
     disabled: true
   },

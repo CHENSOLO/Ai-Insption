@@ -1,5 +1,5 @@
 // pages/tools/tools-td/tools-td.js
-import { HotList} from "../../../data/ai_tools_data"
+import { HotList,} from "../../../data/ai_tools_data"
 import { language_data, lwmd_data } from "../../../data/data"
 
 Page({
@@ -13,8 +13,8 @@ Page({
     note_title: "请输入内容",
     title: "语言",
     title2: "论文生成类型",
-    copyWdata: String,
-    copylw_data: String,
+    copyWdata: "中文",
+    copylw_data: "大纲",
     disabled: true
   },
 
@@ -24,8 +24,6 @@ Page({
   onLoad(options) {
     //获取到对应id的icon
     const imgsrc = (HotList[options.id].imgSrc);
-    // const imgsrc2 = (StudyList[options.id].imgSrc);
-    // console.log(imgsrc2,imgsrc)
     this.setData({
       icon_data: imgsrc,
       language_data,
@@ -64,20 +62,7 @@ Page({
       disabled: event.detail.text_value === ''
     });
   },
-  //获取笔记要求子组件传递的content内容渲染到页面
-  updataNote(event) {
-    //获取文案风格的key值传递到子组件
-    const copywrite = this.selectComponent('#copywrite')
-    //每次点击试一试，文案风格都会选择默认选项
-    copywrite.setData({
-      key: 0,
-    })
-    //获取子组件传递的内容渲染到textarea组件上
-    this.setData({
-      note_value: event.detail.item_content,
-      disabled: event.detail.item_content === '',
-    })
-  },
+  
 
 
   /**

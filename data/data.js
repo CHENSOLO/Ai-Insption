@@ -83,6 +83,17 @@ var pxx_data = [{
   id: 4,
   styel_text: "较差",
 },]
+//作文模版数据
+var zw_data = [{
+  id: 0,
+  styel_text: "500",
+},{
+  id: 1,
+  styel_text: "800",
+},{
+  id: 2,
+  styel_text: "1000",
+},]
 //导出
 export { 
   style_data,
@@ -90,4 +101,5 @@ export {
   language_data,
   lwmd_data,
   pxx_data,
+  zw_data,
 }

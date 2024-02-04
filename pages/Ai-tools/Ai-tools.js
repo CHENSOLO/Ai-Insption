@@ -1,6 +1,6 @@
 // pages/Ai-tools/Ai-tools.js
 //数据导入
-import { HotList,StudyList } from "../../data/ai_tools_data"
+import { HotList } from "../../data/ai_tools_data"
 Page({
 
   /**
@@ -18,7 +18,6 @@ Page({
   onLoad(options) {
     this.setData({
       HotList,
-      StudyList
     })
   },
 

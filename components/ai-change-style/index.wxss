@@ -24,7 +24,7 @@
 .ai-copywrite-unselect {
   border: 1px solid rgb(241, 240, 237);
   border-radius: 14px;
-  width: 160rpx;
+  padding: 0rpx 25rpx 0rpx 25rpx;
   text-align: center;
   line-height: 65rpx;
   margin-left: 12rpx;
@@ -36,7 +36,7 @@
 .ai-copywrite-selected {
   border: 1px solid rgb(245, 244, 248);
   border-radius: 14px;
-  width: 160rpx;
+  padding: 0rpx 25rpx 0rpx 25rpx;
   text-align: center;
   line-height: 65rpx;
   margin-left: 12rpx;

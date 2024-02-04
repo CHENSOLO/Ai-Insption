@@ -13,7 +13,7 @@ Page({
     HotList,
     note_title: "商品信息",
     title: "请选择评价星级",
-    copyWdata: String,
+    copyWdata: "默认",
     change_title: "试一试",
     disabled: true
   },
