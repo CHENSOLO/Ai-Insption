@@ -68,6 +68,34 @@ var HotList = [{
   content: "有问必解,专业解答",
   imgSrc: "/images/icon/kwkd.jpg",
   study: true
+},{
+  hot_id: 9,
+  name: 'tools-zb',
+  title: "日报/周报",
+  content: "每天提前5分钟下班",
+  imgSrc: "/images/icon/ribao.jpg",
+  work: true
+},{
+  hot_id: 10,
+  name: 'tools-zwjs',
+  title: "自我介绍",
+  content: "让你更了解我",
+  imgSrc: "/images/icon/ziwojieshao.jpg",
+  work: true
+},{
+  hot_id: 11,
+  name: 'tools-xpy',
+  title: "写评语",
+  content: "学生/同事/上下级/自评",
+  imgSrc: "/images/icon/pingyu.jpg",
+  work: true
+},{
+  hot_id: 12,
+  name: 'tools-xwg',
+  title: "新闻稿",
+  content: "新闻发布/报道/专访/快讯",
+  imgSrc: "/images/icon/new.jpg",
+  work: true
 },];
 
 

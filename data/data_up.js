@@ -30,10 +30,6 @@ var up_title_data = [{
   content: ['财经新闻博主', '投资理财博主', '创业投资博主', '个人理财博主']
 }
 ]
-
-
-
-
 //导出
 export {
   up_title_data

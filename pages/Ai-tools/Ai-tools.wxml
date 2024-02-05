@@ -39,13 +39,15 @@
     </view>
     <!-- 为2 -->
     <view wx:if="{{segmentData==2}}" class="ai-container-tools">
-      <view class="ai-container-hot">
-        <image class="ai-image-hot" src="../../images/icon/hotbooks.jpg"></image>
-        <view class="ai-text-hot">
-          <text class="title">工作笔记</text>
-          <text class="content">写笔记从未如此轻松</text>
+      <block wx:for="{{HotList}}" wx:key="index" wx:if="{{ item.work }}">
+        <view class="ai-container-hot" bind:tap="ongodetail_xhs" data-name="{{item.name}}" data-id="{{item.hot_id}}">
+          <image class="ai-image-hot" src="{{item.imgSrc}}" />
+          <view class="ai-text-hot">
+            <text class="title">{{item.title}}</text>
+            <text class="content">{{item.content}}</text>
+          </view>
         </view>
-      </view>
+      </block>
     </view>
     <!-- 为3 -->
     <view wx:if="{{segmentData==3}}" class="ai-container-tools">
