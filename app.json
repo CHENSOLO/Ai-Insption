@@ -11,7 +11,11 @@
     "pages/tools/tools-pxx/tools-pxx",
     "pages/tools/tools-zw/tools-zw",
     "pages/tools/tools-qjfx/tools-qjfx",
-    "pages/tools/tools-kwkd/tools-kwkd"
+    "pages/tools/tools-kwkd/tools-kwkd",
+    "pages/tools/tools-zb/tools-zb",
+    "pages/tools/tools-zwjs/tools-zwjs",
+    "pages/tools/tools-xpy/tools-xpy",
+    "pages/tools/tools-xwg/tools-xwg"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",

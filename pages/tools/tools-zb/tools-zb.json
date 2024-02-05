@@ -1,0 +1,10 @@
+{
+  "usingComponents": {
+    "ai-generate":"/components/ai-generate-history/index",
+    "ai-up-style":"/components/ai-up-style/index",
+    "ai-copywrite-style":"/components/ai-copywrite-style/index",
+    "ai-note-style":"/components/ai-note-style/index",
+    "ai-change-style": "/components/ai-change-style/index",
+    "ai-auto_textarea":"/components/ai-auto_textarea/index"
+  }
+}

@@ -1,0 +1,28 @@
+.note {
+  font-size: 27rpx;
+  font-weight: bold;
+}
+
+.active_button {
+  margin-top: 300rpx;
+  border-radius: 25rpx;
+  width: 330rpx;
+  background-color: rgb(11, 11, 12);
+  color: #fff;
+  font-size: 30rpx;
+}
+
+.active_button[disabled] {
+  border-radius: 25rpx;
+  width: 330rpx;
+  background-color: rgb(198, 198, 198) !important;
+  color: #fff !important;
+  font-size: 30rpx;
+}
+.tag {
+  margin-top: 100rpx;
+  position: absolute;
+  left: 280rpx;
+  font-size: 20rpx;
+  color: rgb(179, 182, 182);
+}
