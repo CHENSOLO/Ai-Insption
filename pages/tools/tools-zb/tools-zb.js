@@ -1,6 +1,6 @@
 // pages/tools/tools-td/tools-td.js
-import { HotList,} from "../../../data/ai_tools_data"
-import { language_data, lwmd_data } from "../../../data/data"
+import { HotList, } from "../../../data/ai_tools_data"
+import { language_data, zb_data } from "../../../data/data"
 
 Page({
 
@@ -10,13 +10,16 @@ Page({
   data: {
     key: 0,
     HotList,
-    note_title: "请输入内容",
-    note_title2:"职业信息",
+    note_title: "工作内容",
+    auto_title: "职业信息",
     title: "语言",
-    title2: "论文生成类型",
-    copyWdata: "中文",
-    copylw_data: "大纲",
-    disabled: true
+    title2: "选择类型",
+    copylw_data: "日报",
+    disabled: false,
+    textareaValues: {
+      textarea1: '',
+      textarea2: ''
+    },
   },
 
   /**
@@ -28,7 +31,7 @@ Page({
     this.setData({
       icon_data: imgsrc,
       language_data,
-      lwmd_data,
+      zb_data,
     })
   },
   //处理开始生成按钮的功能
@@ -36,39 +39,51 @@ Page({
     //获取笔记要求的数据
     const noteCopy = this.selectComponent('#noteCopy')
     const noteData = (noteCopy.data.value);
-    //获取文案风格的数据
-    const copyStyleData = (this.data.copyWdata)
+    //获取职业信息的数据
+    const career = this.selectComponent('#auto_textarea')
+    const career_data = (career.data.value)
     //获取论文生产类型数据(
     const copylw_data = (this.data.copylw_data)
-    console.log(noteData, copyStyleData,copylw_data)
+    console.log(career_data, noteData, copylw_data)
+
   },
-  //点击获取文案风格的数据并存入data
-  copyWrite(event) {
-    const copyWdata = (event.detail.data);
-    // console.log(copyWdata)
-    this.setData({
-      copyWdata: copyWdata
-    })
-  },
+  //点击获取日报类型的数据并存入data
   copylw(event) {
-    const copylw_data  = (event.detail.data);
+    const copylw_data = (event.detail.data);
     this.setData({
       copylw_data: copylw_data
     })
   },
-  //处理子组件的textare是否有数据更改button使用
+  //处理子组件的textare是否有数据通过前端data-name1来获取当前textare的名称，然后存储到textareaValues对象中
   handleTextareaNote(event) {
-    // console.log(event)
+    const name = event.currentTarget.dataset.name;
+    const note_value = event.detail.text_value
     this.setData({
-      disabled: event.detail.text_value === ''
+      [`textareaValues.${name}`]: note_value
+    });
+    this.checkConfirmButtonEnabled(); //调用该方法
+  },
+  //处理子组件的textare是否有数据通过前端data-name2来获取当前textare的名称，然后存储到textareaValues对象中
+  handleTextareaCarrer(event) {
+    const name = event.currentTarget.dataset.name;
+    const note_value = event.detail.text_value
+    this.setData({
+      [`textareaValues.${name}`]: note_value
+    });
+    this.checkConfirmButtonEnabled();//调用该方法
+  },
+  //判断是否为空来确认disabled的值
+  checkConfirmButtonEnabled() {
+    const textareaValues = this.data.textareaValues;
+    const isTextarea1Filled = textareaValues.textarea1.trim() !== '';
+    const isTextarea2Filled = textareaValues.textarea2.trim() !== '';
+    this.setData({
+      disabled: isTextarea1Filled && isTextarea2Filled
     });
   },
-  
-
-
   /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
+ * 生命周期函数--监听页面初次渲染完成
+ */
   onReady() {
 
   },

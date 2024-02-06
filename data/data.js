@@ -94,6 +94,57 @@ var zw_data = [{
   id: 2,
   styel_text: "1000",
 },]
+//日报模版数据
+var zb_data = [{
+  id: 0,
+  styel_text: "日报",
+},{
+  id: 1,
+  styel_text: "周报",
+},{
+  id: 2,
+  styel_text: "月报",
+},{
+  id: 3,
+  styel_text: "季度",
+},{
+  id: 4,
+  styel_text: "年终",
+},]
+//场景模版数据
+var cj_data = [{
+  id: 0,
+  styel_text: "社交",
+},{
+  id: 1,
+  styel_text: "面试",
+},{
+  id: 2,
+  styel_text: "简历",
+},{
+  id: 3,
+  styel_text: "相亲",
+},{
+  id: 4,
+  styel_text: "演讲",
+},]
+//评语模版数据
+var py_data = [{
+  id: 0,
+  styel_text: "学生",
+},{
+  id: 1,
+  styel_text: "同事",
+},{
+  id: 2,
+  styel_text: "上级",
+},{
+  id: 3,
+  styel_text: "下属",
+},{
+  id: 4,
+  styel_text: "自评",
+},]
 //导出
 export { 
   style_data,
@@ -102,4 +153,7 @@ export {
   lwmd_data,
   pxx_data,
   zw_data,
+  zb_data,
+  cj_data,
+  py_data,
 }

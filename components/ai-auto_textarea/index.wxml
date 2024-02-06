@@ -5,6 +5,6 @@
     <text class="textcount">{{length}}/20</text>
   </view>
   <view class="textarea-wrp">
-    <textarea class="textarea" placeholder="请输入您的职业名称..." maxlength='20' value="{{value}}" style="height: 3em" bindinput="handleInput"></textarea>
+    <textarea class="textarea" placeholder="请输入您的职业名称..." maxlength='20' value="{{value}}" style="height: 2.5em" bindinput="handleInput"></textarea>
   </view>
 </view>

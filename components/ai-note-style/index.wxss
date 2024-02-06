@@ -21,7 +21,7 @@
   border-radius: 25rpx;
   margin-left: 35rpx;
   background-color: #fff;
-  width: 344px;
+  width: 355px;
 }
 .start_prompt {
   height: 14rpx;
