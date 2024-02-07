@@ -1,6 +1,7 @@
 // pages/tools/tools-td/tools-td.js
-import { HotList, } from "../../../data/ai_tools_data"
-import { py_data } from "../../../data/data"
+import { HotList } from "../../../data/ai_tools_data"
+import { pxx_data } from "../../../data/data"
+import { dzdp_data_try } from "../../../data/data_change"
 
 Page({
 
@@ -10,9 +11,10 @@ Page({
   data: {
     key: 0,
     HotList,
-    note_title: "具体内容",
-    title: "新闻类型",
-    copyWdata: "新闻发布",
+    note_title: "店铺信息",
+    title: "请选择好评度",
+    copyWdata: "默认",
+    change_title: "试一试",
     disabled: true
   },
 
@@ -24,7 +26,8 @@ Page({
     const imgsrc = (HotList[options.id].imgSrc);
     this.setData({
       icon_data: imgsrc,
-      py_data,
+      pxx_data,
+      dzdp_data_try,
     })
   },
   //处理开始生成按钮的功能
@@ -34,7 +37,7 @@ Page({
     const noteData = (noteCopy.data.value);
     //获取文案风格的数据
     const copyStyleData = (this.data.copyWdata)
-    console.log(noteData, copyStyleData)
+    console.log(noteData,copyStyleData)
   },
   //点击获取文案风格的数据并存入data
   copyWrite(event) {
@@ -44,7 +47,6 @@ Page({
       copyWdata: copyWdata
     })
   },
-
   //处理子组件的textare是否有数据更改button使用
   handleTextareaNote(event) {
     // console.log(event)
@@ -52,7 +54,22 @@ Page({
       disabled: event.detail.text_value === ''
     });
   },
+  //获取笔记要求子组件传递的content内容渲染到页面
+  updataNote(event) {
+    //获取文案风格的key值传递到子组件
+    const copywrite = this.selectComponent('#copywrite')
+    //每次点击试一试，文案风格都会选择默认选项
+    copywrite.setData({
+      key: 0,
+    })
+    //获取子组件传递的内容渲染到textarea组件上
+    this.setData({
+      note_value: event.detail.item_content,
+      disabled: event.detail.item_content === '',
+      copyWdata: '默认',
 
+    })
+  },
 
 
   /**

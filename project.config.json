@@ -19,7 +19,7 @@
       "disablePlugins": [],
       "outputPath": ""
     },
-    "condition": false,
+    "condition": true,
     "ignoreDevUnusedFiles": false,
     "ignoreUploadUnusedFiles": true
   },
@@ -28,5 +28,9 @@
     "tabIndent": "auto",
     "tabSize": 2
   },
-  "projectname": "InSption"
+  "projectname": "InSption",
+  "projectArchitecture": "multiPlatform",
+  "simulatorPluginLibVersion": {
+    "wxext14566970e7e9f62": "2.27.3-4"
+  }
 }

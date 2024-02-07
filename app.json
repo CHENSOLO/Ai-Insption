@@ -15,7 +15,15 @@
     "pages/tools/tools-zb/tools-zb",
     "pages/tools/tools-zwjs/tools-zwjs",
     "pages/tools/tools-xpy/tools-xpy",
-    "pages/tools/tools-xwg/tools-xwg"
+    "pages/tools/tools-xwg/tools-xwg",
+    "pages/tools/tools-xhsbk/tools-xhsbk",
+    "pages/tools/tools-dsp/tools-dsp",
+    "pages/tools/tools-email/tools-email",
+    "pages/tools/tools-wechat/tools-wechat",
+    "pages/tools/tools-dzdp/tools-dzdp",
+    "pages/tools/tools-mtwm/tools-mtwm",
+    "pages/tools/tools-qs/tools-qs",
+    "pages/tools/tools-zf/tools-zf"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",

@@ -1,6 +1,6 @@
 // pages/tools/tools-td/tools-td.js
 import { HotList, } from "../../../data/ai_tools_data"
-import { py_data } from "../../../data/data"
+import { pyq_data } from "../../../data/data"
 
 Page({
 
@@ -10,9 +10,9 @@ Page({
   data: {
     key: 0,
     HotList,
-    note_title: "具体内容",
-    title: "新闻类型",
-    copyWdata: "新闻发布",
+    note_title: "主题",
+    title: "文案风格",
+    copyWdata: "默认",
     disabled: true
   },
 
@@ -24,7 +24,7 @@ Page({
     const imgsrc = (HotList[options.id].imgSrc);
     this.setData({
       icon_data: imgsrc,
-      py_data,
+      pyq_data,
     })
   },
   //处理开始生成按钮的功能

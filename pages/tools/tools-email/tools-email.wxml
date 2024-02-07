@@ -3,7 +3,7 @@
   <ai-generate icon_data="{{icon_data}}" />
   <!-- 2. 语言风格类型 -->
   <!-- 参考https://blog.csdn.net/qq_41219586/article/details/103356859 -->
-  <ai-copywrite-style bind:copyWdata="copyWrite" style_data="{{py_data}}" id="copywrite">
+  <ai-copywrite-style bind:copyWdata="copyWrite" style_data="{{dsp_data}}" id="copywrite">
     <text>{{title}}</text>
   </ai-copywrite-style>
   <!-- 3.笔记要求 -->

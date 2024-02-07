@@ -114,6 +114,36 @@ var qjfx_data_try = [{
   title: "热门专业有哪些？",
   content: "目前有哪些热门专业，薪资高的，且发展前景不错的"
 },]
+//小红书爆款标题试一试数据
+var xhs_data_try = [{
+  id: 0,
+  title: "i人放假的一天",
+  content: "i人的一天都是在做些什么"
+}, {
+  id: 1,
+  title: "瞒着领导摸鱼做网红",
+  content: "瞒着领导摸鱼做网红的下场是什么！"
+}, 
+{
+  id: 2,
+  title: "这家奇特的咖啡店",
+  content: "这家奇特的咖啡店让你体验到了全新的咖啡文化"
+},]
+//大众点评试一试数据
+var dzdp_data_try = [{
+  id: 0,
+  title: "椰子鸡火锅",
+  content: "帮忙写一篇100字左右的椰子鸡评价，尽量贴近口语化，从菜品、店铺环境、食材多个维度描述"
+}, {
+  id: 1,
+  title: "酸菜鱼",
+  content: "帮忙写一篇100字左右的酸菜鱼评价，尽量贴近口语化，从菜品、店铺环境、食材多个维度描述"
+}, 
+{
+  id: 2,
+  title: "海鲜饭店",
+  content: "帮忙写一篇100字左右的海鲜饭店评价，尽量贴近口语化，从菜品、店铺环境、食材多个维度描述"
+},]
 //导出
 export {
   xhs_data,
@@ -123,4 +153,6 @@ export {
   pxx_data_try,
   qjfx_data_try,
   zw_data_try,
+  xhs_data_try,
+  dzdp_data_try,
 }

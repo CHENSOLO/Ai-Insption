@@ -4,8 +4,8 @@ var HotList = [{
   title: "小红书笔记",
   content: "写笔记从未如此轻松",
   imgSrc: "/images/icon/hotbooks.jpg",
-  hot: true
-
+  hot: true,
+  social: true,
 }, {
   hot_id: 1,
   name: 'tools-zh',
@@ -13,6 +13,8 @@ var HotList = [{
   content: "成为更专业的达人",
   imgSrc: "/images/icon/zhihu.jpg",
   hot: true,
+  social: true,
+
 }, {
   hot_id: 2,
   name: 'tools-td',
@@ -20,6 +22,8 @@ var HotList = [{
   content: "助力探店计划进行",
   imgSrc: "/images/icon/tandian.jpg",
   hot: true,
+  social: true,
+
 }, {
   hot_id: 3,
   name: 'tools-gg',
@@ -43,6 +47,7 @@ var HotList = [{
   content: "快速升级模板",
   imgSrc: "/images/icon/pinduoduo.jpg",
   hot: true,
+  life: true,
 
 }, {
   hot_id: 6,
@@ -68,38 +73,92 @@ var HotList = [{
   content: "有问必解,专业解答",
   imgSrc: "/images/icon/kwkd.jpg",
   study: true
-},{
+}, {
   hot_id: 9,
   name: 'tools-zb',
   title: "日报/周报",
   content: "每天提前5分钟下班",
   imgSrc: "/images/icon/ribao.jpg",
   work: true
-},{
+}, {
   hot_id: 10,
   name: 'tools-zwjs',
   title: "自我介绍",
   content: "让你更了解我",
   imgSrc: "/images/icon/ziwojieshao.jpg",
   work: true
-},{
+}, {
   hot_id: 11,
   name: 'tools-xpy',
   title: "写评语",
   content: "学生/同事/上下级/自评",
   imgSrc: "/images/icon/pingyu.jpg",
   work: true
-},{
+}, {
   hot_id: 12,
   name: 'tools-xwg',
   title: "新闻稿",
   content: "新闻发布/报道/专访/快讯",
   imgSrc: "/images/icon/new.jpg",
   work: true
+},
+{
+  hot_id: 13,
+  name: 'tools-xhsbk',
+  title: "小红书爆款标题",
+  content: "帮你抓住流量密码",
+  imgSrc: "/images/icon/xiaohongshu.jpg",
+  social: true,
+}, {
+  hot_id: 14,
+  name: 'tools-dsp',
+  title: "短视频脚本",
+  content: "故事结构/类型风格/时长",
+  imgSrc: "/images/icon/video.jpg",
+  social: true,
+}, {
+  hot_id: 15,
+  name: 'tools-email',
+  title: "电子邮件",
+  content: "个人/商务/社交媒体",
+  imgSrc: "/images/icon/email.jpg",
+  social: true,
+}, {
+  hot_id: 16,
+  name: 'tools-wechat',
+  title: "wechat文案",
+  content: "让你成为高冷的女神",
+  imgSrc: "/images/icon/pyq.jpg",
+  social: true,
+}, {
+  hot_id: 17,
+  name: 'tools-dzdp',
+  title: "大众点评评级",
+  content: "助你快速账号升级",
+  imgSrc: "/images/icon/dzdp.jpg",
+  life: true,
+}, {
+  hot_id: 18,
+  name: 'tools-mtwm',
+  title: "美图外卖评价",
+  content: "轻松获得好评返现",
+  imgSrc: "/images/icon/meituan.jpg",
+  life: true,
+}, {
+  hot_id: 19,
+  name: 'tools-qs',
+  title: "告白气球",
+  content: "用诗歌的韵律，奏响爱的旋律",
+  imgSrc: "/images/icon/love.jpg",
+  life: true,
+}, {
+  hot_id: 20,
+  name: 'tools-zf',
+  title: "节日祝福",
+  content: "用言语来形容爱和感激",
+  imgSrc: "/images/icon/holiday.jpg",
+  life: true,
 },];
-
-
-
 export {
   HotList,
 

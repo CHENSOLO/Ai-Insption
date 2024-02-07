@@ -1,0 +1,21 @@
+<view class="container">
+  <!-- 1. 生成记录模版 -->
+  <ai-generate icon_data="{{icon_data}}" />
+  <!-- 3. 日报生成类型 -->
+  <ai-copywrite-style bind:copyWdata="copylw" style_data="{{gb_data}}" id="copywrite">
+    <text>{{title2}}</text>
+  </ai-copywrite-style>
+  <!-- 2.职业信息 -->
+  <ai-auto_textarea id="auto_textarea" bind:textareaChange="handleTextareaCarrer" data-name="textarea1">
+    <text class="note">{{auto_title}}</text>
+  </ai-auto_textarea>
+  <!-- 4.笔记要求 -->
+  <ai-note-style id="noteCopy" bind:textareaChange="handleTextareaNote" data-name="textarea2">
+    <text class="note">{{note_title}}</text>
+  </ai-note-style>
+  <text class="tag">- 生成文案仅供参考 -</text>
+  <!-- 5.button生成 -->
+  <view>
+    <button bindtap="handleButtonClick" disabled="{{!disabled}}" class="active_button">开始生成</button>
+  </view>
+</view>
