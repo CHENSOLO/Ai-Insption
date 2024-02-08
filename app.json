@@ -1,8 +1,8 @@
 {
   "pages": [
-    "pages/welcome/welcome",
-    "pages/index/index",
     "pages/Ai-tools/Ai-tools",
+    "pages/Ai-my/Ai-my",
+    "pages/welcome/welcome",
     "pages/tools/tools-xhs/tools-xhs",
     "pages/tools/tools-zh/tools-zh",
     "pages/tools/tools-td/tools-td",
@@ -32,5 +32,26 @@
     "backgroundColor": "#99cccc",
     "backgroundTextStyle": "light",
     "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#B8B8B8",
+    "selectedColor": "#000000",
+    "backgroundColor": "#FFFFFF",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/Ai-tools/Ai-tools",
+        "text": "首页",
+        "iconPath": "assets/shouye_unselected.jpg",
+        "selectedIconPath": "assets/shouye_selected.jpg"
+      },
+      {
+        "pagePath": "pages/Ai-my/Ai-my",
+        "text": "我的",
+        "iconPath": "assets/my_unselected.jpg",
+        "selectedIconPath": "assets/my_selected.jpg"
+      }
+    ]
   }
 }

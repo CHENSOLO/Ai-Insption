@@ -321,6 +321,20 @@ var gb_data = [{
   id: 3,
   styel_text: "文字表达告白",
 },]
+//祝福模版数据
+var zf_data = [{
+  id: 0,
+  styel_text: "新年祝福",
+},{
+  id: 1,
+  styel_text: "情人节祝福",
+},{
+  id: 2,
+  styel_text: "母亲节祝福",
+},{
+  id: 3,
+  styel_text: "父亲节祝福",
+},]
 //导出
 export { 
   style_data,
@@ -337,4 +351,5 @@ export {
   pyq_data,
   mtwm_data,
   gb_data,
+  zf_data,
 }
