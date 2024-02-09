@@ -1,2 +1,10 @@
-<!--pages/Ai-my/Ai-my.wxml-->
-<text>pages/Ai-my/Ai-my.wxml</text>
+<view class="container">
+<!-- 头像区域模块 -->
+  <view class="personal-box">
+    <view class="personal-info">
+      <image src="../../images/icon/love.jpg"></image>
+      <text>个人名称</text>
+      <text>id</text>
+    </view>
+  </view>
+</view>
