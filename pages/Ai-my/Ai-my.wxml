@@ -10,6 +10,7 @@
     </view>
   </view>
 </view>
+<!-- 头像模块栏  -->
 <view class="head-box" style="padding-top: {{navBarHeight+20}}px;">
   <view class="level" bindtap="headClick">
     <image class="top-head" src="../../images/ai_my/news.png" mode="widthFix"></image>
@@ -18,85 +19,68 @@
         <text class="nick" style="font-size: 30rpx;">JefferyTan</text>
         <text class="acount" style="font-size: 28rpx;">189****8888</text>
       </view>
-      <view class="level set-center">已认证</view>
+      <!-- <view class="level set-center">已认证</view> -->
     </view>
   </view>
   <view class="level share-box" bindtap="detailClick">
     <view>
       <view class="money">
-        <text>存款</text>
-        <text class="money-text">￥1000000.00</text>
+        <!-- <text>AI助你成为大博</text> -->
+        <image class="vip" src="../../images/ai_my/VIP.png"></image>
+        <text class="money-text">VIP会员专享特权</text>
       </view>
-      <view class="share-text">开启通往成功的道路！</view>
+      <view class="share-text">AI助你开启致富的道路！</view>
     </view>
-    <view class="share-btn">查看详情</view>
+    <view class="share-btn">联系客服</view>
   </view>
 </view>
-<!-- 关注收藏模块 -->
-<view class="level sign-box">
-  <view>8000+ 人关注</view>
-  <view>1000+ 人收藏</view>
+<!-- 次数加油站模块 -->
+<view class="fighting-box">
+  <image class="v-bar" src="../../images/ai_my/v_bar.png"></image>
+  <text class="v-title">次数加油站</text>
 </view>
-<!-- 分享更多实例模块 -->
-<view class="more-box" bindtap="shareClick">分享更多示例，关注我哦，进我主页，共同学习小程序的开发呦！</view>
-<!-- 菜单栏模块 -->
-<view class="level tab-box">
-  <block wx:for="{{tabList}}" wx:for-index="index" wx:for-item="item" wx:key="item">
-    <view class="tab-list" bindtap="tabClick" data-item="{{item}}">
-      <image class="tab-img" src="{{item.src}}" mode="widthFix"></image>
-      <view class="tab-text">{{item.title}}</view>
-    </view>
-  </block>
-</view>
-<!-- 基本信息模块 -->
 <view class="white-box">
   <button class="row" style="width: 100%;" bindtap="basicClick">
     <view class="left">
       <icon type="success" size="16" color="#2979ff"></icon>
-      <text class="text">基本信息</text>
+      <text class="text">获取次数</text>
     </view>
     <image class="right" src="../../images/ai_my/right.png" mode="widthFix"></image>
   </button>
-  <button class="row" style="width: 100%;" bindtap="feedbackClick">
-    <view class="left">
-      <icon type="success" size="16" color="#2979ff"></icon>
-      <text class="text">匿名反馈</text>
-    </view>
-    <image class="right" src="../../images/ai_my/right.png" mode="widthFix"></image>
-  </button>
-  <button class="row" style="width: 100%;" bindtap="aboutClick">
-    <view class="left">
-      <icon type="success" size="16" color="#2979ff"></icon>
-      <text class="text">关于我们</text>
-    </view>
-    <image class="right" src="../../images/ai_my/right.png" mode="widthFix"></image>
-  </button>
+</view>
+<view class="fighting-box">
+  <image class="v-bar" src="../../images/ai_my/v_bar.png"></image>
+  <text class="v-title">其他设置</text>
 </view>
 <!-- 分享好友模块 -->
 <view class="white-box">
   <button open-type="share" class="row" style="width: 100%;">
     <view class="left">
       <icon type="success" size="16" color="#2979ff"></icon>
-      <text class="text">分享好友</text>
+      <text class="text">关注公众号</text>
+    </view>
+    <image class="right" src="../../images/ai_my/right.png" mode="widthFix"></image>
+  </button>
+  <button class="row" style="width: 100%;" bindtap="feedbackClick">
+    <view class="left">
+      <icon type="success" size="16" color="#2979ff"></icon>
+      <text class="text">使用反馈</text>
+    </view>
+    <image class="right" src="../../images/ai_my/right.png" mode="widthFix"></image>
+  </button>
+  <button class="row" style="width: 100%;" bindtap="aboutClick">
+    <view class="left">
+      <icon type="success" size="16" color="#2979ff"></icon>
+      <text class="text">联系客服</text>
     </view>
     <image class="right" src="../../images/ai_my/right.png" mode="widthFix"></image>
   </button>
   <button open-type="contact" class="row" style="width: 100%;border-bottom: none;">
     <view class="left">
       <icon type="success" size="16" color="#2979ff"></icon>
-      <text class="text">在线客服</text>
+      <text class="text">关于我们</text>
     </view>
     <image class="right" src="../../images/ai_my/right.png" mode="widthFix"></image>
-  </button>
-</view>
-<!-- 当前版本模块 -->
-<view class="white-box">
-  <button class="row" style="width: 100%;border-bottom: none;">
-    <view class="left">
-      <icon type="success" size="16" color="#2979ff"></icon>
-      <text class="text">当前版本</text>
-    </view>
-    <view class="right" style="text-align: center;">8.8.8</view>
   </button>
 </view>
 <!-- 底部栏备注 -->
