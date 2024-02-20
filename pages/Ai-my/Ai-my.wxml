@@ -42,7 +42,7 @@
 <view class="white-box">
   <button class="row" style="width: 100%;" bindtap="basicClick">
     <view class="left">
-      <icon type="success" size="16" color="#2979ff"></icon>
+      <image class="image-right" src="../../images/ai_my/add.png"></image>
       <text class="text">获取次数</text>
     </view>
     <image class="right" src="../../images/ai_my/right.png" mode="widthFix"></image>
@@ -56,28 +56,28 @@
 <view class="white-box">
   <button open-type="share" class="row" style="width: 100%;">
     <view class="left">
-      <icon type="success" size="16" color="#2979ff"></icon>
+      <image class="image-right" src="../../images/ai_my/follow.png"></image>
       <text class="text">关注公众号</text>
     </view>
     <image class="right" src="../../images/ai_my/right.png" mode="widthFix"></image>
   </button>
   <button class="row" style="width: 100%;" bindtap="feedbackClick">
     <view class="left">
-      <icon type="success" size="16" color="#2979ff"></icon>
+      <image class="image-right" src="../../images/ai_my/answer.png"></image>
       <text class="text">使用反馈</text>
     </view>
     <image class="right" src="../../images/ai_my/right.png" mode="widthFix"></image>
   </button>
   <button class="row" style="width: 100%;" bindtap="aboutClick">
     <view class="left">
-      <icon type="success" size="16" color="#2979ff"></icon>
+      <image class="image-right" src="../../images/ai_my/contact.png"></image>
       <text class="text">联系客服</text>
     </view>
     <image class="right" src="../../images/ai_my/right.png" mode="widthFix"></image>
   </button>
   <button open-type="contact" class="row" style="width: 100%;border-bottom: none;">
     <view class="left">
-      <icon type="success" size="16" color="#2979ff"></icon>
+      <image class="image-right" src="../../images/ai_my/about_me.png"></image>
       <text class="text">关于我们</text>
     </view>
     <image class="right" src="../../images/ai_my/right.png" mode="widthFix"></image>
