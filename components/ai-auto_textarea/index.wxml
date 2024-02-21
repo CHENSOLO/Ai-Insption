@@ -1,8 +1,12 @@
 <view class="ai-end">
   <view class="ai-require-title">
-    <slot></slot>
-    <image class="start_prompt" src="../../images/icon/start_prompt.png"></image>
-    <text class="textcount">{{length}}/20</text>
+    <view>
+      <slot></slot>
+      <image class="start_prompt" src="../../images/icon/start_prompt.png"></image>
+    </view>
+    <view class="ai-right">
+      <text class="textcount">{{length}}/20</text>
+    </view>
   </view>
   <view class="textarea-wrp">
     <textarea class="textarea" placeholder="请输入您的职业名称..." maxlength='20' value="{{value}}" style="height: 2.5em" bindinput="handleInput"></textarea>

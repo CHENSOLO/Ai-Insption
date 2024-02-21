@@ -1,12 +1,9 @@
 .container {
-  margin-top: 35rpx;
   margin-bottom: 190rpx;
 }
 
 .ai-change-title {
-  padding-left: 40rpx;
-  /* padding-right: 15rpx; */
-  /* margin-left: 20rpx; */
+  padding-left: 26rpx;
   font-size: 27rpx;
   font-weight: bold;
   margin-bottom: 15rpx;
@@ -17,8 +14,7 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding-left: 15rpx;
-  /* margin-left: 25rpx; */
+  padding-left: 10rpx;
 }
 
 .ai-copywrite-unselect {

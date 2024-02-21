@@ -1,26 +1,21 @@
-.ai-generate-history{
+.container {
   display: flex;
-  flex-direction: row;
-  margin-bottom: 50rpx;
-
+  margin-bottom: 35rpx;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 35rpx;
 }
-.generate_history{
-  margin-top: 28rpx;
-  left: 450rpx;
 
-}
-.ai-image-hot{
-  padding-top: 28rpx;
-  /* margin-top: 28rpx; */
-  /* margin-left: 40rpx; */
-  /* padding-left: 40rpx; */
+.ai-image-hot {
   width: 66rpx;
   height: 61rpx;
+  padding-left: 26rpx;
+}
+.container-button {
+  padding-right: 26rpx;
 }
 .generate-button {
-  width: 160rpx;
-  height: 60rpx;
   font-size: 25rpx;
   background-color: #D8D8D8;
-  font-weight: bold;
+  font-weight:550;
 }
