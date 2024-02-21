@@ -4,13 +4,12 @@
 }
 
 .ai-change-title {
-  padding-left: 20rpx;
-  padding-right: 15rpx;
-  margin-left: 20rpx;
+  padding-left: 40rpx;
+  /* padding-right: 15rpx; */
+  /* margin-left: 20rpx; */
   font-size: 27rpx;
   font-weight: bold;
   margin-bottom: 15rpx;
-
 }
 
 .ai-change-content {
@@ -18,7 +17,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  margin-left: 25rpx;
+  padding-left: 15rpx;
+  /* margin-left: 25rpx; */
 }
 
 .ai-copywrite-unselect {

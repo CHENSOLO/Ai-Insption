@@ -74,4 +74,8 @@
       </block>
     </view>
   </view>
+  <!-- 尾部到底了 -->
+  <view class="end-container">
+    <text class="tag">- 到底啦 -</text>
+  </view>
 </view>

@@ -16,7 +16,17 @@
   padding-bottom: 80rpx;
 
 }
-
+.end-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.tag {
+  text-align: center;
+  font-size: 20rpx;
+  color: rgb(179, 182, 182);
+  padding-bottom: 30rpx;
+}
 .ai-container-tools {
   display: flex;
   flex-direction: row;

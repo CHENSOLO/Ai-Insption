@@ -5,23 +5,30 @@
 }
 
 .ai-require-title {
-  margin-left: 40rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   margin-bottom: 15rpx;
-  justify-content: flex-start;
 }
-
+.textcount-title{
+  padding-left: 28rpx;
+}
 .textcount {
   font-size: 20rpx;
   color: rgb(165, 162, 162);
-  margin-left: 500rpx;
+  padding-right: 20rpx;
+}
+.textarea-wrp {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .textarea{
-  display: flex;
-  flex-direction: column;
+  text-align: justify;
   border-radius: 25rpx;
-  margin-left: 35rpx;
   background-color: #fff;
-  width: 355px;
+  width: 360px;
+  
 }
 .start_prompt {
   height: 14rpx;

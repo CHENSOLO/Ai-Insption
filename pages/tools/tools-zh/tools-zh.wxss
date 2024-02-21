@@ -1,3 +1,6 @@
+.container {
+  width: 100%;
+}
 .note {
   font-size: 27rpx;
   font-weight: bold;

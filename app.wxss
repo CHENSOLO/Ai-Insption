@@ -1,3 +1,5 @@
 page{
   background-color: #eeeeee;
+  overflow-x: hidden;
+
 }

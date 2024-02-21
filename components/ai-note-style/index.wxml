@@ -1,7 +1,9 @@
 <view class="ai-end">
   <view class="ai-require-title">
-    <slot></slot>
-    <image class="start_prompt" src="../../images/icon/start_prompt.png"></image>
+    <view class="textcount-title">
+      <slot></slot>
+      <image class="start_prompt" src="../../images/icon/start_prompt.png"></image>
+    </view>
     <text class="textcount">{{length}}/500</text>
   </view>
   <view class="textarea-wrp">
