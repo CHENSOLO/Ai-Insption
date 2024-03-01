@@ -1,6 +1,4 @@
-// pages/welcome/welcome.js
-
-
+// pages/Ai-share/Ai-share.js
 Page({
 
   /**
@@ -15,21 +13,6 @@ Page({
    */
   onLoad(options) {
 
-  },
-
-  //获取头像
-  onChooseAvatar(event){
-    const {avatarUrl} = event.detail
-    this.setData({
-      avatarUrl
-    })
-  },
-
-  //跳转到首页
-  onTap(event){
-    wx.navigateTo({
-      url: '../Ai-tools/Ai-tools',  
-  })
   },
 
   /**

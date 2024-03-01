@@ -5,6 +5,6 @@
   <input type="nickname" class="weui-input" placeholder="请输入昵称" />
   <!-- <button>开启小程序之旅</button> -->
   <view catch:tap="onTap" class="journey-container">
-    <text bind:tap="onTap" class="journey">开启小程序之旅</text>
+    <text bind:tap="onTap" class="journey">提交</text>
   </view>
 </view>

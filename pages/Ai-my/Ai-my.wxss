@@ -173,7 +173,7 @@ page {
 }
 
 .v-title {
-  font-size: 36rpx;
+  font-size: 30rpx;
   line-height: 34rpx;
   font-weight: bold;
   vertical-align: middle;

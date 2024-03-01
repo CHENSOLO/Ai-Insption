@@ -2,7 +2,7 @@
   "pages": [
     "pages/Ai-tools/Ai-tools",
     "pages/Ai-my/Ai-my",
-    "pages/welcome/welcome",
+    "pages/Ai-avatar/Ai-avatar",
     "pages/tools/tools-xhs/tools-xhs",
     "pages/tools/tools-zh/tools-zh",
     "pages/tools/tools-td/tools-td",
@@ -23,7 +23,8 @@
     "pages/tools/tools-dzdp/tools-dzdp",
     "pages/tools/tools-mtwm/tools-mtwm",
     "pages/tools/tools-qs/tools-qs",
-    "pages/tools/tools-zf/tools-zf"
+    "pages/tools/tools-zf/tools-zf",
+    "pages/Ai-share/Ai-share"
   ],
   "window": {
     "navigationBarBackgroundColor": "#ffffff",

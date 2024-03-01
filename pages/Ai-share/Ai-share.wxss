@@ -1,0 +1,61 @@
+/* pages/Ai-share/Ai-share.wxss */
+.container-count {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 50rpx;
+}
+
+.count {
+  display: flex;
+  align-items: center;
+  width: 630rpx;
+  height: 100rpx;
+  background-color: #ffffff;
+  border-radius: 30rpx;
+  padding-left: 30rpx;
+}
+
+.count-title {
+  color: #000000;
+  font-weight: bold;
+}
+
+.count-content {
+  padding-left: 30rpx;
+  color: #8A2BE2;
+}
+
+.container-share {
+  margin-top: 50rpx;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.container-share-content {
+  border-radius: 30rpx;
+  border: 1px solid #e7e4e4;
+  background-color: #ffffff;
+  width: 290rpx;
+  height: 310rpx;
+  display: flex;
+  flex-direction: column;
+  margin-left: 42rpx;
+  margin-right: 42rpx;
+  margin-bottom: 25rpx;
+  justify-content: center;
+  align-items: center;
+}
+
+.share-img {
+  width: 65rpx;
+  height: 65rpx;
+}
+.share-text{
+  padding-top: 20rpx;
+  display: flex;
+  flex-direction: column;
+}

@@ -12,7 +12,7 @@
 </view>
 <!-- 头像模块栏  -->
 <view class="head-box" style="padding-top: {{navBarHeight+20}}px;">
-  <view class="level" bindtap="headClick">
+  <view class="level" bindtap="getLoginUser">
     <image class="top-head" src="../../images/ai_my/news.png" mode="widthFix"></image>
     <view class="level head-right">
       <view class="welcome">
@@ -40,7 +40,7 @@
   <text class="v-title">次数加油站</text>
 </view>
 <view class="white-box">
-  <button class="row" style="width: 100%;" bindtap="basicClick">
+  <button class="row" style="width: 100%;" bindtap="getShare">
     <view class="left">
       <image class="image-right" src="../../images/ai_my/add.png"></image>
       <text class="text">获取次数</text>
@@ -48,11 +48,11 @@
     <image class="right" src="../../images/ai_my/right.png" mode="widthFix"></image>
   </button>
 </view>
+<!-- 其他设置模块 -->
 <view class="fighting-box">
   <image class="v-bar" src="../../images/ai_my/v_bar.png"></image>
   <text class="v-title">其他设置</text>
 </view>
-<!-- 分享好友模块 -->
 <view class="white-box">
   <button open-type="share" class="row" style="width: 100%;">
     <view class="left">

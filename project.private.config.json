@@ -6,10 +6,17 @@
     "bigPackageSizeSupport": true,
     "autoAudits": true
   },
-  "libVersion": "3.3.0",
+  "libVersion": "3.3.4",
   "condition": {
     "miniprogram": {
       "list": [
+        {
+          "name": "pages/Ai-tools/Ai-tools",
+          "pathName": "pages/Ai-tools/Ai-tools",
+          "query": "",
+          "launchMode": "default",
+          "scene": null
+        },
         {
           "name": "",
           "pathName": "components/ai-detail-top/index",

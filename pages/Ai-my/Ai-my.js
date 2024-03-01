@@ -6,36 +6,15 @@ Page({
     show: false,
     barHeight: 20, //  顶部状态栏高度
     navBarHeight: 66, // 顶部高度
-    // tabList: [{
-    //   id: '1',
-    //   src: '../../images/ai_my/rank.png',
-    //   title: '菜单一'
-    // },
-    // {
-    //   id: '2',
-    //   src: '../../images/ai_my/tv.png',
-    //   title: '菜单二'
-    // },
-    // {
-    //   id: '3',
-    //   src: '../../images/ai_my/rank.png',
-    //   title: '菜单三'
-    // },
-    // {
-    //   id: '4',
-    //   src: '../../images/ai_my/tv.png',
-    //   title: '菜单四'
-    // }
-    // ],
   },
   // 头像监听
-  headClick() {
+  getLoginUser() {
     wx.showToast({
       title: '点击了头像',
       icon: 'none'
     })
     wx.navigateTo({
-      url: '需要跳转的链接路径',
+      url: '../../pages/Ai-avatar/Ai-avatar',
     })
   },
   // 查看详情监听
@@ -88,14 +67,10 @@ Page({
         break;
     }
   },
-  // 基本信息
-  basicClick() {
-    wx.showToast({
-      title: '基本信息监听',
-      icon: 'none'
-    })
+  // 次数加油站
+  getShare() {
     wx.navigateTo({
-      url: '需要跳转的链接路径',
+      url: '../Ai-share/Ai-share',
     })
   },
   // 匿名反馈
