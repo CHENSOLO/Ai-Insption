@@ -51,11 +51,24 @@
 }
 
 .share-img {
-  width: 65rpx;
-  height: 65rpx;
+  width: 95rpx;
+  height: 85rpx;
 }
-.share-text{
-  padding-top: 20rpx;
+
+.share-text {
+  padding-top: 30rpx;
   display: flex;
   flex-direction: column;
+}
+
+.title {
+  font-size: 26rpx;
+  font-weight: bold;
+}
+
+.content {
+  color: #707070;
+  display: flex;
+  font-size: 18rpx;
+  justify-content: center;
 }

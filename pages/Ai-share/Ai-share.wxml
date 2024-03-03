@@ -10,34 +10,34 @@
   <view class="container-share">
     <!-- 第一个 -->
     <view class="container-share-content" bind:tap="ongodetail_xhs" data-name="{{item.name}}" data-id="{{item.hot_id}}">
-      <image class="share-img" src="../../images/ai_my/about_me.png" />
+      <image class="share-img" src="../../images/ai_share/adv.png" />
       <view class="share-text">
         <text class="title">看广告</text>
-        <text class="content">+0次</text>
+        <text class="content">+2次</text>
       </view>
     </view>
     <!-- 第二个 -->
     <view class="container-share-content" bind:tap="ongodetail_xhs" data-name="{{item.name}}" data-id="{{item.hot_id}}">
-      <image class="share-img" src="../../images/ai_my/about_me.png" />
+      <image class="share-img" src="../../images/ai_share/invite.png" />
       <view class="share-text">
-        <text class="title">看广告</text>
-        <text class="content">+0次</text>
+        <text class="title">邀请新用户</text>
+        <text class="content">+10次</text>
       </view>
     </view>
     <!-- 第三个 -->
     <view class="container-share-content" bind:tap="ongodetail_xhs" data-name="{{item.name}}" data-id="{{item.hot_id}}">
-      <image class="share-img" src="../../images/ai_my/about_me.png" />
+      <image class="share-img" src="../../images/ai_share/license.png" />
       <view class="share-text">
-        <text class="title">看广告</text>
-        <text class="content">+0次</text>
+        <text class="title">兑换码兑换</text>
+        <text class="content">不限次数</text>
       </view>
     </view>
     <!-- 第四个 -->
     <view class="container-share-content" bind:tap="ongodetail_xhs" data-name="{{item.name}}" data-id="{{item.hot_id}}">
-      <image class="share-img" src="../../images/ai_my/about_me.png" />
+      <image class="share-img" src="../../images/ai_share/share.png" />
       <view class="share-text">
-        <text class="title">看广告</text>
-        <text class="content">+0次</text>
+        <text class="title">分享好友</text>
+        <text class="content">+1次</text>
       </view>
     </view>
   </view>

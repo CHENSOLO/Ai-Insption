@@ -1,39 +1,51 @@
 .container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding: 20rpx;
 }
 
-.avatar-wrapper {
+.avatar-container {
+  /* margin-top: 60rpx;
+  text-align: center; */
   padding: 0;
   width: 56px !important;
+  height: 56px;
   border-radius: 30px;
   margin-top: 30px;
-  margin-bottom: 40px;
 }
 
-.avatar {
-  display: block;
+.avatar-container image {
   width: 56px;
   height: 56px;
-}
-.weui-input{
-  font-size: 27rpx;
-  margin-left: 150rpx;
+  margin-bottom: 10rpx;
 }
 
-.journey-container {
-  border: 1px solid #405f80;
-  width: 250rpx;
-  height: 80rpx;
-  border-radius: 10rpx;
-  text-align: center;
-  margin-top: 100rpx;
+
+
+.input-container {
+  display: flex;
+  align-items: center;
+  height: 100rpx;
+  background-color:#E8E8E8;
+  border-radius: 20rpx;
+  margin-top: 60rpx;
 }
 
-.journey {
-  font-size: 22rpx;
-  color: #405f80;
-  line-height: 80rpx;
-  font-weight: bold;
+.input-container text {
+  margin-left: 30rpx;
+  margin-right: 10rpx;
 }
+
+.submit {
+  width: 60%;
+  height: 70rpx;
+  background-color: #3366FF;
+  color: #fff;
+  border: none;
+  border-radius: 30rpx;
+  margin-top: 60rpx;
+  cursor: pointer;
+  font-size: 30rpx;
+}
+
+
+
+/* index.wxss */

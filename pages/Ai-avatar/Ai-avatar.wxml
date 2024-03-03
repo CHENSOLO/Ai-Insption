@@ -1,10 +1,13 @@
 <view class="container">
-  <button class="avatar-wrapper"  open-type="chooseAvatar" bind:chooseavatar="onChooseAvatar">
-    <image class="avatar" src="{{avatarUrl}}"></image>
-</button>
-  <input type="nickname" class="weui-input" placeholder="请输入昵称" />
-  <!-- <button>开启小程序之旅</button> -->
-  <view catch:tap="onTap" class="journey-container">
-    <text bind:tap="onTap" class="journey">提交</text>
+  <!-- 获取头像信息 -->
+  <button class="avatar-container" bindtap="getUserProfile">
+    <image src="{{userInfo.avatarUrl}}" mode="cover"></image>
+  </button>
+
+  <view class="input-container">
+    <text>昵称：</text>
+    <input placeholder="请输入新昵称" value="{{userInfo.nickName}}"></input>
   </view>
-</view>
+
+  <button class="submit" binsdtap="submitChanges">提交</button>
+</view>	

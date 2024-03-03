@@ -8,7 +8,10 @@ Page({
    * 页面的初始数据
    */
   data: {
-    avatarUrl: defaultAvatarUrl,
+
+    // avatarUrl: defaultAvatarUrl,
+    userInfo: {},
+
   },
 
   /**
@@ -18,20 +21,37 @@ Page({
 
   },
 
-  //获取头像
-  onChooseAvatar(event){
+  //处理头像用户名称信息
+  getUserProfile(event) {
     console.log(event)
-    const {avatarUrl} = event.detail
-    this.setData({
-      avatarUrl
+    wx.getUserProfile({
+      desc: '用于完善会员资料', // 声明获取用户个人信息后的用途，后续会展示在弹窗中，请谨慎填写
+      success: (res) => {
+        this.setData({
+          userInfo: res.userInfo,
+        })
+        console.log(res.userInfo.avatarUrl,res.userInfo.nickName)
+      }
     })
   },
 
-  //跳转到首页
-  onTap(event){
-    wx.navigateBack()({
-     delta: 1  
-  })
+  //提交修改到服务器
+  submitChanges() {
+    // console.log(this.data.avatarUrl, this.data.nickname)
+    wx.request({
+      url: '服务端接口url',
+      method: 'POST',
+      data: {
+        avatarUrl: this.data.avatarUrl,
+        nickname: this.data.nickname,
+      },
+      success(res) {
+        //处理服务器返回的结果
+      },
+      fail(res) {
+
+      }
+    })
   },
 
   /**
